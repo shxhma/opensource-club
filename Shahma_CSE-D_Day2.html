@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <!--declaring form tag-->
+        <form action="/submit-form" method="post">
+            <table cellspacing="5" cellpadding="5" border="1">
+                <caption><b>Enter your Registration details</b></caption>
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <!--  This column is used for prompting the user to enter his/her name  -->
+                    <tr>
+                        <th>Name</th>
+                        <td><input type="text" placeholder="Enter name"></td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her contact information  -->
+                    <tr>
+                        <th rowspan="2">Contact Information</th>
+                        <td><input type="number" placeholder="Enter phone number"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="email" placeholder="Enter email ID"></td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her gender using the radio button. this button select either one of the two options --> 
+                    <tr>
+                        <th>Gender</th>
+                        <td><input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
+                        </td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her date of birth  -->
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td><input type="date" placeholder="Enter date of birth"></td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her place like district  -->
+                    <tr>
+                        <th>Place</th>
+                        <td><input type="text" placeholder="Enter place"></td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her username  -->
+                    <tr>
+                        <th>Username</th>
+                        <td><input type="text" placeholder="Enter username"></td>
+                    </tr>
+                    <!--  This column is used for prompting the user to enter his/her password  -->
+                    <tr>
+                        <th>Password</th>
+                        <td><input type="password" placeholder="Enter password"></td>
+                    </tr>
+                    <!--  we use colspan to merge two or more columns. Here we use a checkbox to ask the user to agree to the terms and conditions  -->
+                    <tr>
+                        <td colspan="2"><input type="checkbox">Agree to the terms and conditions</td>
+                    </tr>
+                    <!--This column is used for prompting the user to submit using the button type-->
+                    <tr>
+                        <td colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </fieldset>
+            </table>
+        </form>
+        <footer>
+            <!--The footer is used to add copyright inofration at the bottom of the page-->
+            <p>&copy; 2024 Shahma's Website. All Rights Reserved.</p>
+        </footer>
+    </header>
+</body>
+
+</html>
