@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css"><!--to link css externally-->
+</head>
+<body>
+    <!--using sementic html elements-->
+    <header>
+       <center> <h1>STUDENT REGISTRATION FORM</h1></center>
+</header>
+<!---section has all the details whicjh comes under personal info-->
+<section>
+    <div class="cont1"><!---using div tag for styling-->
+    <table align="center" cellpadding="9"><!---for alligning the items accordingly-->
+        <caption><h2>PERSONAL DETAILS</h2></caption><!--heading for the table-->
+         <tr>   <!--table row which contains table data-->
+            <td>FIRST NAME</td>
+            <td><input type="text" name="Firstname" id="fname" placeholder="Enter your First name"></td>         <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" name="lastname" id="lname" placeholder="Enter your Last name"></td>
+        </tr>
+        <tr>
+            <td>EMAIL ID</td>
+            <td><input type="email" name="mailid" id="mail" placeholder="Enter your mail id"></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+        <td>MALE<input type="radio" name="gender" value="Male" > FEMALE<input type="radio" name="gender" value="Female"></td>
+    </tr>
+    <tr>
+        <td>ADDRESS</td>
+        <td><textarea name="Address" row="3" cols="25"></textarea></td>
+    </tr>
+    <tr>
+        <td>SELECT YOUR HOBBIES</td>
+        <td><select name="hobbies" id="hobbies">
+            <option value="drawing">DRAWING </option>
+            <option value="writing">WRITING</option>
+            <option value="singing">SINGING</option>
+            <option value="dancing">DANCING</option>
+            </select>
+        </td>
+    </tr>
+ </table>
+</section>
+</div>
+<!---next semantic element-->
+<article>
+    <div class="cont2">
+    <center>
+        <!--this table contains all the details regd education-->
+    <table cellspacing="5" cellpadding="2" border="1">
+        <caption><h1>EDUCATION DETAILS</h1></caption>
+        <thread><!--represent group header content in table-->
+            <tr>
+                <!---these are the group contents-->
+                <th>BOARD</th>
+                <th>PERCENTAGE</th>
+                <th>YEAR OF PASSING</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td><input type="text" name="board" placeholder="Enter the specific board" required></td>
+                <td><input type="text" name="percentage" placeholder="Enter your percentage" required></td>
+                <td><input type="text" name="year of pass" placeholder="Enter your pass year" required></td>
+             </tr>
+            <tr>
+                <td><input type="text" name="board" placeholder="Enter the specific board"required></td>
+                <td><input type="text" name="percentage" placeholder="Enter your percentage"required></td>
+                <td><input type="text" name="year of pass" placeholder="Enter your pass year"required></td>
+            
+            
+             </tr>
+             <tr>
+                <td><input type="text" name="board" placeholder="Enter the specific board"required></td>
+                <td><input type="text" name="percentage" placeholder="Enter your percentage"required></td>
+                <td><input type="text" name="year of pass" placeholder="Enter your pass year"required></td>
+            
+            
+             </tr>
+             <tr>
+                <td><input type="text" name="board" placeholder="Enter the specific board"required></td>
+                <td><input type="text" name="percentage" placeholder="Enter your percentage"required></td>
+                <td><input type="text" name="year of pass" placeholder="Enter your pass year"required></td>
+            
+            
+             </tr>
+             
+
+
+        </tbody>
+    </table>
+    <table>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Submit"><!--for creating submit button-->
+            <input type="reset" value="Reset"><!---for reset button-->
+        </td>
+    </tr>
+    </table>
+
+</article>
+</center>
+</div>
+<center><footer><!---end of semantic element-->
+    <h2>FOR MORE DETAILS</h2>
+    <h4>Contact-<a href="67890123">67890123</a></h4>
+    <h4>Mail at-<a href="s23@gmail.com">S23@gmail.com</a></h4>
+</footer></center>
+    
+</body>
+</html>
