@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<!-- basic html dtructure -->
+<body style="text-align: center;">
+    <main>
+        
+        <!-- a semantic tag (header)is being used -->
+        <header>
+            <h2><u>TREKING REGISTRATION FORM :</u></h2>
+            <!-- a semantic tag (nav) is being used with a tags to make it as a link -->
+            <nav> <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Gallery</a>
+                <a href="">Feedback</a>
+                <a href="">Contact us</a>
+            </nav>
+        </header>
+        <hr><br>
+       
+         <!-- Table for Form Layout -->
+         <table border="1" cellpadding="10" cellspacing="0" style="margin-left: auto;
+         margin-right: auto;">
+            <tr>
+                <th colspan="2" scope="col">Personal Information</th>
+            </tr>
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required placeholder="enter your phone number"></td>
+            </tr>
+            <tr>
+           <td> <label for="age">Age</label></td>
+    <td><input type="number"name="age" id="age"placeholder="enter your age"required></td>
+    </tr>
+            <tr>
+                <th colspan="2" scope="col">Selection type Information</th>
+            </tr>
+            <tr>
+                <td><label for="interests">Gender:</label></td>
+                <td>
+                      <!-- inputype for radio buttons -->
+                    <label for="gender">Gender:</label>
+                    <label for="male">male:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">female:</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" name="gender"id="other" value="other">
+                    <label for="other">Other:</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="State">State:</label></td>
+                <td>
+                    <!-- inputtype for dropdown lists -->
+                    <select id="ste" name="state">
+                        <option value="tamilnadu">tamilnadu</option>
+                        <option value="kerala">kerala</option>
+                        <option value="hydrabad">hydrabad</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!-- inputype for dates -->
+                <td><label for="birthdate">Birthdate:</label></td>
+                <td>
+                    <input type="date"name="birth date" id="birth date" required>
+                </td>
+            </tr>
+          
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset"><br><br>
+                    <a href="">click here for payment details</a><br>
+                    <label for="agree">I agree to <a href="" target="_blank">terms</a></label>
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                </td>
+            </tr>
+        </table>
+        <article>
+             <!-- various semantic tags are used and hence a image is inserted inside it -->
+            <figure>
+                <img src="formimg.jpg" alt="formimg">
+            </figure>
+        </article>
+        <section>
+            <!-- section sematic tags are used -->
+            Thank you for filling up the form!!
+        </section>
+        
+    </main>
+</body>
+<hr>
+<footer> 
+   <!-- footer sematic tags are used -->
+    <p>&copy;2024 my website all rights reserved</p>
+    <a href="https://www.instagram.com/">Instagram</a> | <a href="www.github.com">github</a>
+    
+</footer>
+
+</html>
