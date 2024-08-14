@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;/*ALIGNING TEXT INSIDE THE BOX*/
+            border: 1px solid blue;
+        }
+        /* Style for the main diagonal */
+        tr:nth-child(2) td:nth-child(1),
+        tr:nth-child(3) td:nth-child(2),
+        tr:nth-child(4) td:nth-child(3) {
+            background-color: orange;
+        }
+        /* Style for the anti-diagonal */
+        tr:nth-child(2) td:nth-child(3),
+        tr:nth-child(3) td:nth-child(2),
+        tr:nth-child(4) td:nth-child(1) {
+            background-color: red;
+        }
+    </style>
+
+    <title>CHALLENGE 2</title>
+</head>
+
+<body>
+    <h2>Table with Fully Colored Diagonal Cells</h2>
+    <table>
+        <!-- taking criteria as rrn,name,sports  -->
+        <tr>
+            <th>RRN</th>
+            <th>NAME</th>
+            <th>SPORTS</th>
+        </tr>
+        <tr>
+            <!-- making diagonal values colored  -->
+            <td class="diagonal">220071601130</td>
+            <td>Anas</td>
+            <td class="diagonal">kabadi</td>
+        </tr>
+        <tr>
+            <td>220071601109</td>
+            <td class="diagonal">lokesh bharathi</td>
+            <td>chess</td>
+        </tr>
+        <tr>
+            <td class="diagonal">220071601115</td>
+            <td>martin</td>
+            <td class="diagonal">cricket</td>
+        </tr>
+    </table>
+</body>
+</html>
