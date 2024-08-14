@@ -1,0 +1,64 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Font style for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox layout for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Cover the entire area with the background image */
+    background-position: center; /* Center the background image */
+}
+
+/* Home page specific styles */
+.home-bg {
+    background-image: url('BG.jpg'); /* Background image for the home page */
+}
+
+/* Black page specific styles */
+.black-bg {
+    background-image: url('BLACK.png'); /* Background image for the black page */
+    background-color: black; /* Fallback color in case the image fails to load */
+    color: white; /* Text color for better contrast on black background */
+}
+
+/* White page specific styles */
+.white-bg {
+    background-color: white; /* Background color for the white page */
+    color: black; /* Text color for better contrast on white background */
+}
+
+/* Container styling */
+.container {
+    text-align: center; /* Center-align text within the container */
+}
+
+/* Header styling */
+h1 {
+    font-size: 2em; /* Font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Button group styling */
+.button-group {
+    display: flex; /* Flexbox layout for button alignment */
+    justify-content: center; /* Center-align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button styling */
+.button {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Padding around button text */
+    color: white; /* Text color of the button */
+    background-color: #007BFF; /* Background color of the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+}
+
+/* Button hover styling */
+.button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
