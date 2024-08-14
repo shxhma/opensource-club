@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Registration and Vacancy</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header align="center">
+        <h1>Train Registration System</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav align="center">
+        <a href="#registration">Registration</a>
+        <a href="#vacancy">Train Vacancy</a>
+    </nav>
+    
+    <main>
+        <!-- Passenger Registration Form -->
+        <article>
+            <h2>Passenger Registration</h2>
+            <form action="#" method="post">
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend style="text-align: center;">Personal Information</legend>
+                    <caption style="text-align: center; display: block; font-weight: bold;"><b>Please fill in your personal details</b></caption>
+                    <br><label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br><br>
+                    <label for="ph-no">Cell no:</label>
+                    <input type="number" id="ph-no" name="Cell no" required><br><br>
+                    <label for="email-address">Email:</label>
+                    <input type="email" id="email-address" name="address" required><br><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea><br><br>
+                </fieldset>
+
+                <!-- Train Vacancy Section -->
+                <h2>Train Vacancy</h2>
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Coach Available</th>
+                            <th>Seats Available</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Express 101</td>
+                            <td>A</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Superfast 202</td>
+                            <td>D</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Local 303</td>
+                            <td>F</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Express 101</td>
+                            <td>B</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Superfast 202</td>
+                            <td>C</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Local 303</td>
+                            <td>D</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Train Details Section -->
+                <fieldset>
+                    <legend style="text-align: center;">Train Details</legend>
+                    <caption style="text-align: center; display: block; font-weight: bold;"><b>Please enter the train details</b></caption>
+                    <br><label for="trainname">Train Name:</label>
+                    <input type="text" id="trainname" name="trainname" required><br><br>
+                    <label for="coach">Coach:</label>
+                    <input type="text" id="coach" name="coach" required><br><br>
+                    <label for="seat">Seat count:</label>
+                    <input type="text" id="seat" name="seat" required><br><br>
+                </fieldset> <br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="book">
+            </form>
+        </article>
+    </main>
+
+    <!-- for Booking Instructions -->
+    <aside>
+        <h3>Booking Instructions</h3>
+        <ol>
+            <li>Fill out all required fields in the registration form.</li>
+            <li>Check the train vacancy table for available seats.</li>
+            <li>Submit the form to complete your registration.</li>
+        </ol>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer align="center">
+        <p>&copy; 2024 Train Registration System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
