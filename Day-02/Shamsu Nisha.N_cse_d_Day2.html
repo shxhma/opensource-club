@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Workshop Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Register for a Workshop</h2>
+            <p>Welcome to our workshop registration page! Please complete the form below to register for one of our upcoming workshops. Each workshop is designed to enhance your skills and knowledge in a specific area.</p>
+            
+            <h3>Workshop Details</h3>
+            <p>Choose from the following workshops:</p>
+            <ul>
+                <li><strong>Workshop 1:</strong> Introduction to Programming - Learn the basics of programming with hands-on exercises in a friendly environment.</li>
+                <li><strong>Workshop 2:</strong> Advanced Web Development - Dive deep into advanced topics of web development including frameworks and best practices.</li>
+                <li><strong>Workshop 3:</strong> Data Science Fundamentals - Understand the key concepts of data science and machine learning through practical examples.</li>
+            </ul>
+
+            <form action="/register_workshop" method="post">
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <th><label for="name">Full Name:</label></th>
+                            <td><input type="text" id="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="rrn">RRN:</label></th>
+                            <td><input type="number" id="rrn" name="rrn" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="college">College Name:</label></th>
+                            <td><input type="text" id="college" name="college"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="branch">Branch:</label></th>
+                            <td><input type="text" id="branch" name="branch"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="section">Section:</label></th>
+                            <td><input type="text" id="section" name="section"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="phone">Phone Number:</label></th>
+                            <td><input type="text" id="phone" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="email">Email:</label></th>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <th>Select Workshop:</th>
+                            <td>
+                                <input type="radio" id="workshop1" name="workshop" value="workshop1" required>
+                                <label for="workshop1">Workshop 1: Introduction to Programming</label><br>
+                                <input type="radio" id="workshop2" name="workshop" value="workshop2">
+                                <label for="workshop2">Workshop 2: Advanced Web Development</label><br>
+                                <input type="radio" id="workshop3" name="workshop" value="workshop3">
+                                <label for="workshop3">Workshop 3: Data Science Fundamentals</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Workshop Materials:</th>
+                            <td>
+                                <input type="checkbox" id="material1" name="materials" value="guide">
+                                <label for="material1">Workshop Guide</label><br>
+                                <input type="checkbox" id="material2" name="materials" value="video">
+                                <label for="material2">Instructional Videos</label><br>
+                                <input type="checkbox" id="material3" name="materials" value="cert">
+                                <label for="material3">Certification</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="experience">Experience Level:</label></th>
+                            <td>
+                                <select id="experience" name="experience">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="comments">Additional Comments:</label></th>
+                            <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>Terms and Conditions:</th>
+                            <td>
+                                <input type="checkbox" id="terms" name="terms" value="agree" required>
+                                <label for="terms">I agree to the <a href="#terms-conditions">Terms and Conditions</a></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section >
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Cancel">
+                </section>
+            </form>
+
+            <section id="terms-conditions">
+                <h3>Terms and Conditions</h3>
+                <p>By registering for a workshop, you agree to the following terms and conditions:</p>
+                <ul>
+                    <li>Workshop fees are non-refundable once paid.</li>
+                    <li>Participants are responsible for their own travel and accommodation arrangements.</li>
+                    <li>We reserve the right to cancel or reschedule workshops if necessary.</li>
+                    <li>By attending the workshop, you consent to being photographed for promotional purposes.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Workshop Organization. All rights reserved.</p>
+        <p>For more information, please visit our <a href="#contact">Contact Us</a> page.</p>
+    </footer>
+</body>
+</html>
