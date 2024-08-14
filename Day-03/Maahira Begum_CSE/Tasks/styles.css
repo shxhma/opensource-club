@@ -1,0 +1,53 @@
+/* General table styling */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Alternating row colors */
+.alt-rows tr:nth-child(odd) {
+    background-color:#e0e0e0;
+}
+
+.alt-rows tr:nth-child(even) {
+    background-color:#007872;
+}
+
+/* Diagonal cell colors */
+.diagonal td {
+    background-color: #fff;
+}
+
+/* Single color for diagonal cells */
+.diagonal tr:nth-child(1) td:nth-child(1),
+.diagonal tr:nth-child(2) td:nth-child(2),
+.diagonal tr:nth-child(3) td:nth-child(3),
+.diagonal tr:nth-child(4) td:nth-child(4),
+.diagonal tr:nth-child(5) td:nth-child(5) {
+    background-color:#419E98; 
+}
+
+/* Combined: Alternating rows and diagonal colors */
+.combined tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+.combined tr:nth-child(even) {
+    background-color: #007872;
+}
+
+.combined tr:nth-child(1) td:nth-child(1),
+.combined tr:nth-child(2) td:nth-child(2),
+.combined tr:nth-child(3) td:nth-child(3),
+.combined tr:nth-child(4) td:nth-child(4),
+.combined tr:nth-child(5) td:nth-child(5) {
+    background-color: #419E98; /* Yellow diagonal */
+}
