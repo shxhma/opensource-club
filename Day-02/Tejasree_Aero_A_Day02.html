@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Internship Registration Form</h1>
+            <p>Apply for an internship with SKYLINE SPACE.</p>
+        </header>
+
+        <form action="/submit-form" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Personal Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td><input type="text" id="first-name" name="first-name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td><input type="text" id="last-name" name="last-name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Educational Background</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="institution">Institution:</label></td>
+                        <td><input type="text" id="institution" name="institution" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="degree">Degree:</label></td>
+                        <td><input type="text" id="degree" name="degree" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="major">Major:</label></td>
+                        <td><input type="text" id="major" name="major" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="graduation-year">Expected Graduation Year:</label></td>
+                        <td><input type="text" id="graduation-year" name="graduation-year" required></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="skills">Relevant Skills:</label></td>
+                        <td><textarea id="skills" name="skills" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="why-interested">Why are you interested in this internship?</label></td>
+                        <td><textarea id="why-interested" name="why-interested" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="availability">Availability (Start Date):</label></td>
+                        <td><input type="text" id="availability" name="availability" required></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{padding: 0;
+margin: 0;
+}
+
+.taskbar{
+    background-color:rgb(35, 35, 39);
+    color: orange;
+    padding: 20px;
+    .port{
+        font-weight: bold;
+        
+        display: inline-block;
+    }
+}
+ 
+
+ul,li{
+        display:inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        float: right;
+        margin-right: 90px;
+        background-color:rgb(35, 35, 39);
+        color: orange;
+
+}
+ul:hover{
+    cursor: pointer;
+}
+.header{
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    display: block;
+     
+}
+.section{
+    margin-left: 250px;
+    font-style: italic;
+    display: inline-block ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pic1{
+    width: 200px;
+    height: 200px;
+    margin-left :1100px;
+    margin-top: -100px;
+}
+.register{
+    font-size: 30px;
+    color: orange;
+    margin-top: 30px;
+    text-align: center;
+} 
+.topic{
+    font-size: 25px;
+     color: orange;
+      font-weight: bolder;
+      margin-top: 20px;
+}
+.content{  
+ width: 300px;  
+ text-align: center; 
+ color: black;
+  height: 30px;
+    border-color: black; 
+    border-width:4px;
+    border-radius: 8px; 
+    margin-top: 20px;
+     
+    
+}
+.registration{
+    display: inline-block;
+     background-color: rgb(77, 77, 81);
+     border-radius: 20px;
+     text-align: center;
+     margin-left: 500px;
+}
+.reset{
+    margin-top: 40px;
+}
+.hello{
+    margin: 40px;
+    background-color: black;
+    color: white;
+    float: bottom;
+    margin-top: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+}
