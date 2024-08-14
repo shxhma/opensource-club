@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    body {
+      background-color: #f9f9f9; /* light gray background */
+    }
+    table {
+      background-color: #fff; /* white background for tables */
+    }
+    caption {
+      background-color: #337ab7; /* blue background for captions */
+      color: #fff; /* white text color for captions */
+    }
+    .form-group {
+      background-color: #f0f0f0; /* light gray background for form group */
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .instructions {
+      background-color: #fff; /* white background for instructions */
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .copyright {
+      background-color: #333; /* dark gray background for copyright */
+      color: #fff; /* white text color for copyright */
+      padding: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <caption>Registration Form</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Personal Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="first-name">First Name:</label></td>
+          <td><input type="text" id="first-name" name="first-name" required></td>
+        </tr>
+        <tr>
+          <td><label for="last-name">Last Name:</label></td>
+          <td><input type="text" id="last-name" name="last-name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone:</label></td>
+          <td><input type="tel" id="phone" name="phone"></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" id="age" name="age" min="18" max="100" required></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <select id="gender" name="gender" required>
+              <option value="">Select an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea id="address" name="address"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Account Information</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Account Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td><input type="text" id="username" name="username" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td><label for="confirm-password">Confirm Password:</label></td>
+          <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>Course Preferences</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Course Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input type="radio" id="course-type-1" name="course-type" value="programming">
+            <label for="course-type-1">Programming</label>
+          </td>
+          <td>
+            <input type="radio" id="course-type-2" name="course-type" value="design">
+            <label for="course-type-2">Design</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="course-type-3" name="course-type" value="business">
+            <label for="course-type-3">Business</label>
+          </td>
+          <td>
+            <input type="radio" id="course-type-4" name="course-type" value="other">
+            <label for="course-type-4">Other</label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  
+    <div class="instructions">
+      <h2>Instructions to Remember:</h2>
+      <ul>
+        <li>Ensure that all required fields are filled in correctly.</li>
+        <li>Use a valid email address to receive confirmation and notifications.</li>
+        <li>Choose a strong password and confirm it accurately.</li>
+        <li>Select your course preferences carefully to avoid any mistakes.</li>
+      </ul>
+    </div>
+  
+    <div class="copyright">
+      &copy; 2024 CRESCENT INSTITUTE. All rights reserved.
+    </div>
+  </body>
+  </html>
