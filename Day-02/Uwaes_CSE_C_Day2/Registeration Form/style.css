@@ -1,0 +1,118 @@
+img{
+    width: 400px;
+    height: 400px;
+} 
+
+
+.wrapper .button {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.wrapper .button .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.wrapper .button:hover .icon {
+    color: #050505; 
+    transform: scale(1.1);
+}
+
+.wrapper .button span {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.wrapper .button:hover {
+    background-color: hsl(0, 0%, 100%); 
+}
+
+.wrapper .button:nth-child(2):hover {
+    background-color: #326e8e; 
+}
+
+.wrapper .button:nth-child(3):hover {
+    background-color: #933893; 
+}
+
+
+
+caption{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+}
+
+
+nav{
+    position: relative;
+    font-family: 'Poppins' ,sans-serif;
+    padding: 0 10px;
+    font-style: italic;
+    color: rgb(26, 103, 103);
+    
+}
+
+nav:after{
+    content: "";
+    position: absolute;
+    background-color: rebeccapurple;  
+    height: 3px;
+    width: 0;
+    left: 0;  
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav:hover:after{
+    width: 100%;
+}
+
+.Heading{
+    position: relative;
+    font-family: 'Poppins' , 'Times New Roman', Times, serif;
+    padding: 0 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+h1:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(186, 145, 228);  
+    height: 3px;
+    width: 0;
+    left: 0;  
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+h1:hover:after{
+    width: 100%;
+}
+
+.click{
+    color: white;
+}
+
+body{
+    background-image: url('images/BG1.jpg');
+    color: white;
+}
