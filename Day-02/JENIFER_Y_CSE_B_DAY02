@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;">Registration Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+        <section class="registration-form">
+            <header>
+                <h1 style="text-align: center;">REGISTER</h1>
+                <p style="text-align: center;">Please fill in the form below to create an account.</p>
+            </header>
+            <form action="/submit-registration" method="post">
+        
+                <fieldset>
+                    <legend>Personal Information</legend>
+                
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm_password" required>
+                    
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+
+                    <label for="submit-registration"></label>
+                    <input type="submit" id="submit-registration" name="submit-registration">
+
+                    <label for="reset"></label>
+                    <input type="reset" id="reset-registration" name="reset">
+                    </fieldset>
+                    </form>
+                    </section>
+                    </main>
+                    </body>
+                    </html>
+   *{
+    display: block;
+}
+#submit-registration{
+    padding: 5px;
+    margin: 20px;
+}
+#reset-registration{
+    padding: 5px;
+    max-resolution: 20px;
+}
+
+
+
+ 
