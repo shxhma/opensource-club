@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating Row Colors Table with Multiple Diagonals</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* For the first table - alternating row colors */
+        tr:nth-child(even) {
+            background-color: lightblue;
+            color: black;
+        }
+
+        tr:nth-child(odd) {
+            background-color: pink;
+        }
+
+        /* For the second table - diagonal cells colored */
+        .table-2 td {
+            background-color: lightblue;
+            color: black;
+        }
+
+        .table-2 tr:nth-child(odd) td {
+            background-color: pink;
+        }
+
+        /* Style for first diagonal with yellow */
+        .table-2 td.diagonal-1 {
+            background-color: yellow !important;
+        }
+
+        /* Style for second diagonal with green */
+        .table-2 td.diagonal-2 {
+            background-color: green !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- First table with alternating rows -->
+    <table>
+        <tr>
+            <th>Fruits</th>
+            <th>Vegetables</th>
+            <th>Flowers</th>
+            <th>Climate</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>Carrot</td>
+            <td>Rose</td>
+            <td>Tropical</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Potato</td>
+            <td>Sunflower</td>
+            <td>Temperate</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+            <td>Spinach</td>
+            <td>Lotus</td>
+            <td>Arid</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>Broccoli</td>
+            <td>Tulip</td>
+            <td>Polar</td>
+        </tr>
+    </table>
+
+    <!-- Second table with diagonals having alternate colors -->
+    <table class="table-2">
+        <tr>
+            <td class="diagonal-1">A1</td>
+            <td class="diagonal-2">B1</td>
+            <td class="diagonal-1">C1</td>
+            <td class="diagonal-2">D1</td>
+        </tr>
+        <tr>
+            <td class="diagonal-2">A2</td>
+            <td class="diagonal-1">B2</td>
+            <td class="diagonal-2">C2</td>
+            <td class="diagonal-1">D2</td>
+        </tr>
+        <tr>
+            <td class="diagonal-1">A3</td>
+            <td class="diagonal-2">B3</td>
+            <td class="diagonal-1">C3</td>
+            <td class="diagonal-2">D3</td>
+        </tr>
+        <tr>
+            <td class="diagonal-2">A4</td>
+            <td class="diagonal-1">B4</td>
+            <td class="diagonal-2">C4</td>
+            <td class="diagonal-1">D4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
