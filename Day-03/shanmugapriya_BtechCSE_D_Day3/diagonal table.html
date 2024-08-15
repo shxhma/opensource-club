@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 14px;
+        }
+        /* Styling for diagonal cells */
+        tr:nth-child(1) td:nth-child(1),
+        tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(3) td:nth-child(3),
+        tr:nth-child(4) td:nth-child(4),
+        tr:nth-child(5) td:nth-child(5) {
+            background-color: #ffeb3b; /* Yellow for diagonal cells */
+            font-weight: bold;
+            color: #333333;
+        }
+        tr:hover {
+            background-color: #f1c40f; /* Highlight row on hover */
+            cursor: pointer;
+        }
+        caption {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+        }
+    </style>
+    <title>Enhanced Diagonal Cell Colors</title>
+</head>
+<body>
+
+<table>
+    <caption>DATA COLLECTION FOR REGISTRATION</caption>
+    <tr>
+        <th>Collage</th>
+        <th>Department</th>
+        <th>Year</th>
+        <th>core</th>
+        <th>Phone_Number</th>
+         
+    </tr>
+    <tr>
+        <td>CRESCENT</td>
+        <td>Btech CSE</td>
+        <td>3 </td>
+        <td>Data Management</td>
+        <td>965874123</td>
+    </tr>
+    <tr>
+        <td>SRM</td>
+        <td> Btech IOT</td>
+        <td>4</td>
+        <td>Cloud Management</td>
+        <td>852369741</td>
+    </tr>
+    <tr>
+        <td>Sai Ram</td>
+        <td>Btech IT</td>
+        <td>4</td>
+        <td> Web Developer</td>
+        <td> 9321654987</td>
+    </tr>
+    <tr>
+        <td>VIT</td>
+        <td>Btech EEE</td>
+        <td>3</td>
+        <td>Hardware Management</td>
+        <td>852461379 </td>
+    </tr>
+    <tr>
+        <td>CIT</td>
+        <td>Btech Biotech</td>
+        <td>3</td>
+        <td>Analysis</td>
+        <td>874512369</td>
+    </tr>
+</table>
+
+</body>
+</html>
