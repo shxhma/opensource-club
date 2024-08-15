@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I have created a html file for day 2 session's task-->
+    <title>Day 2 Session's Task</title>
+</head>
+
+<body>
+    <!--I have added header tag to store the heading as well as navigations-->
+    <header>
+        <h1>HTML Essentials</h1>
+        <!--I have added navigation tag with anchor tags inside it to move to other pages-->
+        <nav>
+            <h2>For Beginners: </h2>
+            <a href="#">HTML</a><br>
+            <a href="#">Basic HTML Tags</a><br>
+            <a href="#"> Attributes in HTML</a>
+        </nav>
+    </header>
+    <!--I have added section tag to store table values-->
+    <section>
+        <!--I have added table tag with attributes to store values in tabular format-->
+        <table cellspacing="15" cellpadding="13" border="2">
+            <caption>
+                <h2>Tables in HTML</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th colspan="7">Important Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>table</td>
+                    <td>caption</td>
+                    <td>thead</td>
+                    <td>tbody</td>
+                    <td>tr</td>
+                    <td>th</td>
+                    <td>td</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table cellspacing="10" cellpadding="10" border="2">
+            <thead>
+                <tr>
+                    <th colspan="5">Important Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>colspan/rowspan</td>
+                    <td>cellpadding</td>
+                    <td>cellspacing</td>
+                    <td>scope</td>
+                    <td>border</td>
+                </tr>
+            </tbody>
+        </table>
+        <table cellspacing="15" cellpadding="15" border="2">
+            <h2>Forms in HTML</h2>
+            <thead>
+                <tr>
+                    <th rowspan="5">Important Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>form</td>
+                    <td>input</td>
+                    <td>label</td>
+                    <td>button</td>
+                    <td>fieldset</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--I have added article tag to store information related to registration and sample form -->
+    <article>
+        <h2>Sample Registration Form</h2>
+        <p>A registration form consists of information required by an organisation to allow users access there website</p>
+        <form action="/submit-form" method="post">
+            <fieldset>
+                <legend>Sample Registration Form</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="mail">E-mail id: </label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your email id" required>
+                <br><br>
+                <label for="phone_no">Phone Number: </label>
+                <input type="number" id="phone_no" name="phone_no" placeholder="Enter phone number" required>
+                <br><br>
+                <label for="DOB">DOB: </label>
+                <input type="date" id="DOB" name="DOB" placeholder="Enter your DOB" required>
+                <br><br>
+                <label for="gender">Gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <br><br>
+                <label for="terms">Terms and Conditions: </label>
+                <label for="agree">Agree</label>
+                <input type="checkbox" id="agree" name="terms" value="agree" required />
+                <br><br>
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </article>
+    <!--I have added footer tag to mark the end of the webpage-->
+    <footer>
+        <p>© All Rights Reserved</p>
+    </footer>
+<!--I have used break tags to insert line breaks-->
+</body>
+
+</html>

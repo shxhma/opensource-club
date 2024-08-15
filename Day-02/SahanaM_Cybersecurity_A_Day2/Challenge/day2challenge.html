@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I have created a html file for day 2 challenge-->
+    <title>Day 2 Challenge</title>
+</head>
+
+<body style="text-align: center;">
+    <!--I have added a header tag to store headings-->
+    <header>
+        <h1>Open Source Club Registration Form </h1>
+        <h2>Join our mission to create,build and innovate</h2>
+    </header>
+    <!--I have added an article tag to store the content-->
+    <article>
+        <p>Welcome to Open Source Club! We are excited to have you join our community</p>
+        <p>Fill out the registration form and join our vibrant community today!</p>
+    </article>
+    <!--I have added section tag to store form and tables-->
+    <section style="padding: 20px;width: 100%;
+    max-width: 600px;margin-left:365px;">
+        <!--Within the form tag I have used attributes like action and method-->
+        <form action="/submit-form" method="post">
+            <fieldset style="padding: 30px;">
+                <legend><strong>Fill out the form</strong> </legend>
+                <!--Within the label tag I have added for attribute-->
+                <label for="name" style="margin-left: -280px;">Name: </label>
+                <!--Within the input tag I have added attributes like type,id,name and placeholder-->
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="rrn" style="margin-left: -280px;">RRN: </label>
+                <input type="number" id="rrn" name="rrn" placeholder="Enter your RRN" required>
+                <br><br>
+                <label for="mail" style="margin-left: -255px;">E-mail id: </label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your email id" required>
+                <br><br>
+                <label for="phone_no" style="margin-left: -220px;">Phone Number: </label>
+                <input type="number" id="phone_no" name="phone_no" placeholder="Enter phone number" required>
+                <br><br>
+                <label for="branch" style="margin-left: -268px;">Branch: </label>
+                <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+                <br><br>
+                <!--I have added table tag to store values in tabular format-->
+                <!--I have added attributes like cellspacing,cellpadding and border to table tag-->
+                <table cellspacing="15" cellpadding="13" border="2">
+                    <caption>Details</caption>
+                    <thead>
+                        <tr>
+                            <!--I have added scope and colspan under th tag-->
+                            <th scope="colgroup" colspan="3"><label for="year">Year of Study: </label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--I have added radio buttons under td tag-->
+                            <td> <input type="radio" id="second" name="year" value="second" />
+                                <label for="second">2<sup>nd</sup>year</label>
+                            </td>
+                            <td> <input type="radio" id="third" name="year" value="third" />
+                                <label for="third">3<sup>rd</sup>year</label>
+                            </td>
+                            <td><input type="radio" id="fourth" name="year" value="fourth" />
+                                <label for="fourth">4<sup>th</sup>year</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <table cellspacing="15" cellpadding="10" border="2">
+                    <thead>
+                        <tr>
+                            <!--I have added scope and rowspan under th tag-->
+                            <th scope="rowgroup" rowspan="5"><label for="interest">Interested in?</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--I have added checkboxes under td tag-->
+                            <td><input type="checkbox" id="op1" name="interest" value="op1" />
+                                <label for="op1">Technical</label>
+                            </td>
+                            <td> <input type="checkbox" id="op2" name="interest" value="op2" />
+                                <label for="op2">Designing</label>
+                            </td>
+                            <td><input type="checkbox" id="op3" name="interest" value="op3" />
+                                <label for="op3">Research and Development</label>
+                            </td>
+                            <td> <input type="checkbox" id="op4" name="interest" value="op4" />
+                                <label for="op4">Finanace</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <label for="resume" style="margin-left: -150px;">Upload Resume</label>
+                <!--I have added file input option-->
+                <input type="file" id="resume" name="resume">
+                <br><br>
+                <!--I have added reset button-->
+                <button type="reset">Reset</button>
+                <!--I have added submit button-->
+                <button type="submit">Submit</button>
+    </section>
+    </section>
+    <!--I have used aside tag to added content-->
+    <aside>
+        <h3>Perks of joining us</h3>
+        <!--I have added unordered list with square bullet points-->
+        <ul type="square" style="list-style-position: outside; 
+        text-align: left;             
+        margin: 0 auto;               
+        display: table;">
+            <li>Gain hands-on experience with coding, debugging, and collaborating on real-world projects</li>
+            <li>Contribute to projects that can be showcased in your resume</li>
+            <li>Work with a variety of programming languages and technologies</li>
+        </ul>
+    </aside>
+    <br>
+    <!--I have added nav tag to facilitate navigation-->
+    <nav style="font-size:20px;">
+        <a href="https://www.linkedin.com/company/open-source-club-crescent/">Connect with us</a>
+        <br><br>
+        <a href="https://www.instagram.com/open_source_club?igsh=ZWNlejZrc2p2MThj">Join our online community</a>
+    </nav>
+    <br><br>
+    <!--I have added footer tag to mark the end of the webpage-->
+    <footer style="font-size:18px;">
+        We cordially invite you to join our club
+    </footer>
+    <!--Throughout the code I have used simple css to make the web page look more appealing-->
+    <!--I have used break tags to insert line breaks-->
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            height: 500px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        label, input, select {
+            display: block;
+            width: 100%;
+        }
+        .inline {
+            display: inline-block;
+            margin-right: 80px;
+        }
+        .block-label {
+            width: auto;
+        }
+        button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;"><big>REGISTRATION FORM</big></h1>
+    </header>
+    <main>
+        <section id="register">
+            <article>
+                <form action="/submit_registration" method="post">
+                    <fieldset>
+                        <legend><big>Registration Details</big></legend>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><big><label for="name">Name</label></big></td>
+                                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="dob">Date of Birth</label></big></td>
+                                    <td><input type="date" id="dob" name="dob" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="age">Age</label></big></td>
+                                    <td><input type="number" id="age" name="age" placeholder="Enter your age" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big>Gender</big></td>
+                                    <td>
+                                        <div class="inline">
+                                            <input type="radio" id="gender-male" name="gender" value="male" required>
+                                            <label for="gender-male" class="block-label"><big>Male</big></label>
+                                        </div>
+                                        <div class="inline">
+                                            <input type="radio" id="gender-female" name="gender" value="female" required>
+                                            <label for="gender-female" class="block-label"><big>Female</big></label>
+                                        </div>
+                                        <div class="inline">
+                                            <input type="radio" id="gender-other" name="gender" value="other" required>
+                                            <label for="gender-other" class="block-label"><big>Other</big></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="phone">Phone</label></big></td>
+                                    <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="email">Email</label></big></td>
+                                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="address">Address</label></big></td>
+                                    <td><input type="text" id="address" name="address" placeholder="Enter your address" required></td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="country">Country</label></big></td>
+                                    <td>
+                                        <select id="country" name="country" required>
+                                            <option value="">Select your country</option>
+                                            <option value="USA">India</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="UK">UK</option>
+                                            <option value="Australia">Australia</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><big>Interests</big></td>
+                                    <td>
+                                        <div class="inline">
+                                            <input type="checkbox" id="interest-technology" name="interests" value="technology">
+                                            <label for="interest-technology" class="block-label"><big>Technology</big></label>
+                                        </div>
+                                        <div class="inline">
+                                            <input type="checkbox" id="interest-sport" name="interests" value="sport">
+                                            <label for="interest-sport" class="block-label"><big>Sport</big></label>
+                                        </div>
+                                        <br>
+                                        <div class="inline">
+                                            <input type="checkbox" id="interest-music" name="interests" value="music">
+                                            <label for="interest-music" class="block-label"><big>Music</big></label>
+                                        </div>
+                                        <div class="inline">
+                                            <input type="checkbox" id="interest-travel" name="interests" value="travel">
+                                            <label for="interest-travel" class="block-label"><big>Travel</big></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><big><label for="password">Password</label></big></td>
+                                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <div style="text-align: center;">
+                        <button type="submit"><big>Submit</big></button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

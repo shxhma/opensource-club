@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background:linear-gradient(rgb(191, 252, 249),hsl(333, 85%, 77%))">
+
+
+    <header>
+        <h1><center>REGISTRATION FORM</center></h1>
+    </header>
+    <!-- Created a Semantic tag-section tag -->
+    <section>
+        <form >
+            <!-- Personal Information Fieldset -->
+           
+            <fieldset width="750px">
+                <legend ><b>PERSONAL INFORMATION</b></legend>
+                <center>
+                <table width = "750" >
+                        
+                    <tr>
+                        <th style="text-align: left;"><label for="first-name" style="font-size: 18px;"><b>First Name:</b></label></th>
+                        <td ><input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="last-name"style="font-size: 18px;"><b>Last Name:</b></label></th>
+                        <td><input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                   
+                        <th style="text-align: left;"><label for="email"style="font-size: 18px;text-align: left;"><b>Email:</b></label></th>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your Email-ID" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box;" ></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="age" style="font-size: 18px;text-align: left;"><b>Age:</b></label></th>
+                        <td><input type="number" id="age" name="age" placeholder="Enter your age" min="0" max="120" size="50" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box;" ></td>
+                    </tr>
+                    <th style="text-align: left; font-size: 18px;"><b>Gender:</b></th>
+                    <td>
+                        <label><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" id="prefer-not-to-say" name="gender" value="otehr" required> Other</label>
+                    </td>
+                </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="phone"style="font-size: 18px;"><b>Phone Number:</b></label></th>
+                        <td><input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" pattern="\d{10}" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box;"></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="country"style="font-size: 18px;"><b>Country:</b></label></th>
+                        <td style="padding: 10px;">
+                            <select id="country" name="country" required style="width: 73%; padding: 6px; font-size: 13px; box-sizing: border-box; margin-left: -10px;">
+                                <option value="">Select Country</option>
+                                <option value="india">India</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </td>
+                    </tr>              
+                </center>
+                </table>
+            </fieldset>
+
+            <!-- Educational Background Fieldset -->
+            <fieldset>
+                <legend><b>EDUCATIONAL BACKGROUND</b></legend>
+                <center>
+                <table width="750px" >
+                    
+                    <tr>
+                        <th style="text-align: left;" ><label for="education" style="font-size: 18px;"><b>Highest Level of Education:</b></label></th>
+                        <td style="padding: 10px;">
+                        
+                            <select id="education" name="education" required style="width: 60%; padding: 6px; font-size: 13px; box-sizing: border-box; margin-right: 90px;">
+                                <option value="">Select Education Level</option>
+                                <option value="highschool">High School</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="doctorate">Doctorate</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="major"style="font-size: 18px;"><b>Major/Field of Study:</b></label></th>
+                        <td><input type="text" id="major" name="major" placeholder="Enter your major or field of study" required style="width: 70%; padding: 6px; font-size: 13px; box-sizing: border-box; margin-left: -20px;" ></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="graduation-year" style="font-size: 18px;"><b>Year of Graduation:</b></label></th>
+                        <td><input type="number" id="graduation-year" name="graduation-year" placeholder="YYYY" min="1900" max="2099" required style="width: 66%; padding: 6px; font-size: 13px; box-sizing: border-boxt; margin-left: -20px;"></td>
+                    </tr>                 
+                </center>
+                </table>   
+            </fieldset>
+        <!-- Additional Information Fieldset -->
+             <!--caption is created here -->
+            <caption><h4><u >ADDITIONAL INFORMATION</u></h4></caption>
+            <center>
+                <table width = "750px" >    
+                    <tr>
+                        <th style="text-align: left;"><label for="skills"  style="font-size: 18px;">Skills:</label></th>
+                        <td><input type="text" id="skills" name="skills" placeholder="List your skills (e.g., programming, design)"required style="width: 60%; padding: 6px; font-size: 13px; box-sizing: border-box; margin-left: 150px;"></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="comments" style="font-size: 18px;">Comments:</label></th>
+                        <td><textarea id="comments" name="comments" cols="50" rows="5" placeholder="Enter your comments here" required style="width: 60%; padding: 6px; font-size: 13px; box-sizing: border-box; margin-left: 150px;">
+                        </textarea></td>
+                    </tr>
+
+                    <tr>
+                        <th style="text-align: left;"><label for="interest"  style="font-size: 18px; margin-top:20px">Area of Interest:</label></th>
+                        <td>
+                            <input type="checkbox" id="singing" name="interest" value="singing" style=" margin-left: 150px; margin-top:20px">
+                            <label for="singing">Web Development</label>
+                            <input type="checkbox" id="dancing" name="interest" value="dancing">
+                            <label for="dancing">App Development</label>
+                            <input type="checkbox" id="reading" name="interest" value="reading">
+                            <label for="reading">Data Science</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><label for="agree" style="font-size: 18px;">Agree to Terms and Conditions:</label></th>
+                        <td>
+                            <input type="checkbox" id="agree" name="agree" required  style=" margin-left: 150px;margin-top: 30px;">
+                            <label for="agree" >I agree to the terms and conditions</label>
+                            <ul><li  style=" margin-left: 95px;" >By clicking 'I agree,' you confirm that you will abide by our Terms of Service, which include following all platform guidelines and refraining from any prohibited activities.</li></ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--colspan is used here-->
+                        <td colspan="4" style="text-align: center;">
+                            <button type="submit" style="background-color: cyan; font-size: 18px;">Register</button>
+                        <button type="reset" style="background-color: coral; font-size: 18px;">Reset</button>
+                        </td>
+                    </tr>
+                </center>
+                </table>
+        </form>
+    </section>
+  
+<hr>
+<center>
+    <!--article-semantic tag is used here-->
+<article>
+       <p>If you have any questions or need further assistance, please do not hesitate to contact our support team.</p>
+   <center>CONTACT-9821437834</center>
+</article>  </center>
+  <hr>
+   <!--footer-semantic tag is used here-->
+    <footer>
+       <center><b> <p>&copy; 2024 Registration Form. All Rights Reserved.</p></b></center>
+    </footer>
+</body>
+</html>

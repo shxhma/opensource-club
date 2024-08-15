@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Start by giving icon and link the icnon, css file and i have linked a cloud css file which can be copied from other css of web pages-->
+
+    <title>Register</title>
+    <link rel="icon" href="images/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<!--Give heading and fill-->
+
+<body>
+    <center>
+        <div class="Heading">
+            <h1>HTML & CSS BOOTCAMP 🎊</h1>
+        </div>
+            <p><b>Learn | Practice | Succeed</b></p>
+            <hr>
+    </center>
+
+
+    <!--Create input tables for the Registration form-->
+    <!--Get the inputs in text or number or file format-->
+    <!--Use radio to get single input button-->
+    <!--Create Placeholder for easy convenience-->
+
+    <center>
+        <h1>Registeration form</h1>
+
+        <form action="/submit-form" method="post">
+           
+            <fieldset>
+<!--Use forms, fieldset, legend, input, name and placeholder to create a input registering form-->
+                <legend>Personal Info</legend>
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="username" placeholder="Enter Your new username">
+                <label for="password">Password:</label>
+                <input type="text" id="Password" name="Password" placeholder="Enter Your new Password">
+                <label for="Captcha">Save Login Info:</label>
+                <input type="checkbox" id="Captcha" name="Captcha">
+            
+            <table> <caption>Register</caption>
+
+                <thead>
+
+                    <th>Fill the Details</th>
+
+                <tr>
+                    <td>Name :</td> <td><input type="text" placeholder="Enter Your Name"></td>
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>Department :</td> <td><input type="text" placeholder="Enter Your Department"></td>
+                </tr>
+            
+            </tbody>
+
+                <tr>
+                    <td>Section :</td> <td><input type="text" placeholder="Enter Your Section"></td>
+                </tr>
+
+                <tr>
+                    <td>RRN :</td> <td><input type="number" placeholder="Enter Your RRN"></td>
+                </tr>
+
+                <tr>
+                    <td>Year of study :</td> <td><input type="number" placeholder="Enter Your Year of study"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender :</td> 
+                    <td>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email :</td> <td><input type="email" placeholder="Enter Your Email"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone :</td> <td><input type="number" placeholder="Enter Your Number"></td>
+                </tr>
+
+                <tr>
+                    <td>Upload your ID</td>
+                    <td><input type="file"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+                
+            </table>
+
+        </fieldset>
+
+        </form>
+    </center>
+
+    <hr>
+
+<!--Linking Home Page-->
+<!--Linking LinkedIn Profile-->
+<!--Linking Instagram Profile-->
+
+<center> 
+    <div class="wrapper">
+        <a href="index.html">
+            <div class="button">
+            <div class="icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <span>Home</span>
+        </div></a>
+        <a href="https://www.linkedIn.com/company/open-source-club-crescent/">
+            <div class="button">
+            <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <span>LinkedIn</span>
+        </div></a>
+        <a href="https://www.instagram.com/open_source_club/?hl=en">
+            <div class="button">
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+        </div></a>
+    </div>
+</center>
+
+</body>
+</html>
