@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS BOARD</title>
+</head>
+<!-- Internal css section -->
+<style>
+    .chessboard {
+      border-collapse: collapse;
+    }
+    /* format of chessboard */
+    .chessboard td {
+      width: 50px;
+      height: 50px;
+      border: 10px solid #000;
+      margin-top: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
+    /* box represented blue colour */
+    .blue { 
+      background-color: #4169E1;
+    }
+    /* box represented white  colour is movement of white bishop in chess board */
+    .white {
+      background-color: #FFFFFF;
+    }
+    /* box represented black  colour is represented black bishop movement in chessboard */
+    .black {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+    header{
+        align-items: center;
+    }   
+  </style>
+<body>
+    <!-- header section -->
+<header>
+    <h1 align="center">CHESS BOARD
+    </h1>
+    </header>
+
+  <main>
+    <!-- main section -->
+  <table class="chessboard" align="center">
+    <caption><h2><---8X8---></h2>
+    <h3>
+        <!-- instruction about board -->
+    <p align="centre">White box represent the able to move of White Bishop</p>
+    <p align="center">Black box represent the able to move of Black Bishop</p>
+</h3>
+</caption>
+    <tr>
+        <!-- white box represent white bishop movement and black box represent black bishop movement in chess board -->
+         <!-- session task -->
+      <td class="white">WB</td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="black"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="white"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="black"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="white"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="black"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="white"></td>
+      <td class="black"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="black"></td>
+      <td class="white"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="black"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="white"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="blue"></td>
+      <td class="black"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="white"></td>
+      <td class="blue"></td>
+    </tr>
+    <tr>
+      <td class="black">BB</td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="blue"></td>
+      <td class="white"></td>
+    </tr>
+    <!-- colour has shaded diagonally -->
+  </table>
+</main>
+<footer align="center" style="padding: 10px; border: 10px; background-color:beige; color:burlywood; text-align:center;"> <!--  INLINE CSS to style  -->
+    <p>&copy; sadiq's website. all rights reserved.</p> <!--  FOOTER SECTION -->
+ </footer>
+
+</body>
+</html>

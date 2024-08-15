@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS GAME</title>
+</head>
+<!--  INTERNAL CSS to style  -->
+<style>
+    /* defined table format */
+    table {
+        width:70%;
+        border-collapse: collapse;
+    }
+    /* defined table head amd table data format */
+    th, td {
+        border: 1px solid #ddd; 
+        padding: 8px; 
+        text-align: center; 
+    }
+    th {
+        background-color: #f2f2f2; 
+    }
+/* prag moves has coloured with class sector */
+    .prag { 
+        background-color: #def2f7; 
+    }
+
+    /* carlesen moves has coloured with id sector */
+
+    #carlsen {
+        background-color: #ff9898; 
+    }
+    /* image section format   */
+    .chessboard-img {
+        margin-bottom: 10px auto;
+        max-width: 50%;
+        height: auto;
+    }
+</style>
+
+       
+<body>
+     <!-- header section   -->
+    <header align="center"> <!--   used inline attribute  -->
+        <h1>CHESS MATCH BETWEEN PRAG VS Carlsen</h1>
+    </header>
+    <!--  board picture  placed at center for refrference regarding address -->
+    <!--   used inline attribute  -->
+       <main> <!--  main section -->
+    <section align="center">
+    <h2>BOARD POSITION</h2> 
+    <img src="chessboard.png" alt="Chessboard Position">
+    </section>
+    
+    <!-- CHESS MOVES -->
+     <table align="center">
+        <thead>
+            <tr> 
+                <!--  TABLE HEADING -->
+                <th>NAME</th>
+                <th>MOVE NUMBER</th>
+                <th>move</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>1</td>
+                <td>e4</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr id="carlsen">
+                <td>Carlsen</td>
+                <td>1</td>
+                <td>e5</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>2</td>
+                <td>Nf3</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr id="carlsen">
+                <td>Carlsen</td>
+                <td>2</td>
+                <td>Nf6</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>3</td>
+                <td>Bb6</td>
+            </tr>
+            <!-- carlsen move defined in id sector -->
+            <tr  id="carlsen">
+                <td>Carlsen</td>
+                <td>3</td>
+                <td>a6</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>4</td>
+                <td>Ba4</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr  id="carlsen">
+                <td>Carlsen</td>
+                <td>4</td>
+                <td>Nf6</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr  class="prag">
+                <td>PRAG</td>
+                <td>5</td>
+                <td>0-0</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr  id="carlsen">
+                <td>Carlsen</td>
+                <td>5</td>
+                <td>Be7</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>6</td>
+                <td>Re1</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr  id="carlsen">
+                <td>Carlsen</td>
+                <td>6</td>
+                <td>b5</td>
+            </tr>
+            <!-- prag move defined in class sector -->
+            <tr class="prag">
+                <td>PRAG</td>
+                <td>7</td>
+                <td>Bb3</td>
+            </tr>
+            <!-- carlsen move defined id sector -->
+            <tr  id="carlsen">
+                <td>Carlsen</td>
+                <td>7</td>
+                <td>d6</td>
+            </tr>
+        </tbody>
+     </table>
+     <div style="text-align: center; padding: 10px; "> <!--  INLINE CSS to style-->
+     <caption><b style="color:brown"> <q>IN THIS MATCH, PRAG WON EVENTUALLY </q></b></caption></div> <!--   quotatio, bold, caption element has used  -->
+    </main> <!-- end main section -->
+     <footer align="center" style="padding: 10px; border: 10px; background-color:beige; color:burlywood; text-align:center;"> <!--  INLINE CSS to style  -->
+        <p>&copy; sadiq's website. all rights reserved.</p> <!--  FOOTER SECTION -->
+     </footer>
+</body>
+</html> 
