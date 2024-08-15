@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color:white;
+    margin-left: 550px;
+    padding-top: 200px;
+    justify-content: space-between;
+    display:inline-block;
+}
+.home_c1{
+ display:inline-block;
+padding:15px;
+border-radius: 7px;
+font-size: 20px;
+}
+.home_c2{
+display:inline-block;
+padding:15px;
+border-radius: 7px;
+font-size: 20px;
+}
+.cont2{
+box-shadow: 0 8px 16px;
+display: inline-block;
+align-items: center;
+padding:40px;
+}
+.home_c1:hover{
+    background-color:burlywood;
+}
+.home_c2:hover{
+background-color: burlywood;
+}
