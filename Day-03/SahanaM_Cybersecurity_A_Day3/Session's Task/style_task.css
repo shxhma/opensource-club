@@ -1,0 +1,6 @@
+/*I have added universal selectors for styling*/
+* {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
