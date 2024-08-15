@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portal</title>
+    <!-- INTERNAL STYLE -->
+    <style>
+        body { /* OVERALL format */
+            text-align: center;
+            margin: 50px;
+            background-image: linear-gradient(to right, rgb(225, 224, 224) ,rgb(253, 253, 204), rgb(255, 225, 225));
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .button1 { /* BUTTON 1 format which is dark room */
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border: 5px solid black;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button2 { /* BUTTON 2 format which is light room */
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(254, 251, 251);
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .button1:hover { /* EFFECT for button 1 */
+            background-color: rgb(0, 0, 0);
+            color: rgb(210, 210, 210);
+        }
+        .button2:hover { /* EFFECT for button 2 */
+            background-color: rgb(210, 210, 210);
+            border: 5px solid rgb(210, 210, 210);
+            color: rgb(0, 0, 0);
+        }
+        .black-button { /* EXTERNAL Style for  button 1 */
+            background-color: #333;
+            color: white;
+        }
+        .black-button:hover {
+            background-color: #555;
+        }
+        .white-button { /* EXTERNAL Style for  button 2 */
+            background-color: white;
+            color: #333;
+            border: 2px solid #333;
+        }
+        .white-button:hover {
+            background-color: #f4f4f4;
+        }
+        footer { /* footer style */
+            flex-shrink: 0;
+            padding: 10px;
+            background-color: beige;
+            color: burlywood;
+            text-align: center;
+            width:100%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header><h1>MYSTERY ROOM</h1></header>
+<main> <!--  main section -->
+    <h1>Welcome to The Portal, Explore the Mystery WOrld!</h1>
+    <p>Two doors lie before you, each leading to a different world. Which will you choose?</p>
+    <a href="black Task-3.html" class="button1">Explore the Shadow</a>
+    <a href="white Task-3.html" class="button2">Seek the Light</a>
+    </main>  
+    <footer> <!-- footer section -->
+        <p>&copy; sadiq's website. all rights reserved.</p>
+    </footer>
+</body>
+
+</html>
