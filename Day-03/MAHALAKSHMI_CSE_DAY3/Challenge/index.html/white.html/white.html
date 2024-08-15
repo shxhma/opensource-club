@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: #000;
+        }
+        .container {
+            text-align: center;
+            width: 70%;
+            max-width: 1200px;
+            margin: auto;
+           
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color:blue;
+        }
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .menu-item {
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+            padding: 20px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: yellow;
+        }
+        .menu-item img {
+            width:250px ;
+            height: 160px;
+            border-radius: 10px;
+        }
+        .menu-item h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: red;
+        }
+        .menu-item p {
+            font-size: 20px;
+            margin: 5px 0;
+            color: #520fed;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d35400;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="i1.jpg" alt="Spaghetti Carbonara">
+                <h2>Spaghetti Carbonara</h2>
+                <p>Price: $12</p>
+            </div>
+            <div class="menu-item">
+                <img src="i2.jpg" alt="Grilled Chicken Salad">
+                <h2>Grilled Chicken Salad</h2>
+                <p>Price: $10</p>
+            </div>
+            <div class="menu-item">
+                <img src="i3.jpg" alt="Margherita Pizza">
+                <h2>Margherita Pizza</h2>
+                <p>Price: $14</p>
+            </div>
+            <div class="menu-item">
+                <img src="i4.webp" alt="Cheeseburger">
+                <h2>Cheeseburger</h2>
+                <p>Price: $11</p>
+            </div>
+            <div class="menu-item">
+                <img src="i5.webp" alt="Chocolate Lava Cake">
+                <h2>Chocolate Lava Cake</h2>
+                <p>Price: $8</p>
+            </div>
+            <div class="menu-item">
+                <img src="i6.jpg" alt="Caesar Salad">
+                <h2>Caesar Salad</h2>
+                <p>$9</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="button">Return Home</a>
+            <a href="black.html" class="button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
