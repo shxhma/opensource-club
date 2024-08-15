@@ -1,0 +1,22 @@
+body{
+    background-color:lightcyan;
+    color: black;
+}
+h1{
+    
+    text-align: center;
+}
+ul li,a{
+    display: inline;
+    padding-left:-20px;
+    align-items: center;
+    margin-left: 100px;
+    
+    
+}
+a:hover{
+    color: red;
+}
+button{
+    margin-top: 10px;
+}
