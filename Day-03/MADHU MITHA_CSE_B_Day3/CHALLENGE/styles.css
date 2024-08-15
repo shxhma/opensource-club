@@ -1,0 +1,143 @@
+/* Common Styles for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.demo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f53838;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+ul {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 10px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Button Styles */
+.white-btn {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.white-btn:hover, .white-btn:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px cyan, 0 0 25px cyan; /* White glow effect */
+}
+.black-btn {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #333;
+}
+.black-btn:hover, .black-btn:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 0, 0, 0.8); /* Black glow effect */
+}
+.home-btn {
+    background-color: #008cba;
+    color: #fff;
+    border: 2px solid #008cba;
+}
+.home-btn:hover, .home-btn:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(19, 194, 252, 0.8), 0 0 25px rgba(19, 194, 252, 0.8); /* Blue glow effect */
+}
+/* Theme for White Theme Page */
+.white-theme {
+    background-color: #fff;
+    color: #333;
+    background-image: url('white.avif');
+     /* Background image for white theme */
+}
+.white-theme h1 {
+    color: #333;
+}
+.white-theme p, .white-theme ul li {
+    color: #555;
+}
+/* Theme for Black Theme Page */
+.black-theme {
+    background-color: #222;
+    color: #fff;
+    background-image: url('black.avif');
+/* Background image for black theme */
+}
+
+.black-theme h1 {
+    color: #fff;
+}
+
+.black-theme p, .black-theme ul li {
+    color: #fff;
+}
+
+.black-theme .container {
+    background-color: #333;
+    color: #fff;
+}
+.black-theme img {
+    border: 5px solid #fff;
+    border-radius: 8px;
+}
+/* Specific Styles for Index Page */
+.indexcontainer {
+    background: linear-gradient(rgb(254, 167, 181),orange);  }
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-row {
+    display: flex;
+    justify-content: center; /* Center-align images horizontally */
+    gap: 15px; /* Space between images */
+    margin-top: 20px; /* Space above the image row */
+}
+
+.image-row img {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
