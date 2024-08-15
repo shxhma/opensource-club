@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(139, 255, 226);
+    font-family: 'Times New Roman', Times, serif;
+    color: #0a4939;
+    padding: 20px 200px;
+}
+
+h1{
+    padding: 20px 200px;
+}
+
+.test {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.test.one {
+    background-color: #059d77;
+    color: white;
+}
+
+.one:hover {
+    background-color: white;
+    color: black;
+}
+
+.test.two {
+    background-color: #059d77;
+    color: white;
+}
+
+.test.two:hover {
+    background-color: black;
+}
