@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        /* Styles for the body of the page */
+        body {
+            background-image: url('white.jpg'); /* Background image path */
+            background-color: white; /* Fallback color if image fails to load */
+            color: black; /* Text color */
+            text-align: center; /* Centers text horizontally */
+            margin: 0; /* Removes default margin */
+            height: 100vh; /* Sets body height to full viewport height */
+            display: flex; /* Uses Flexbox for layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            flex-direction: column; /* Aligns children in a vertical column */
+        }
+
+        /* Styles for buttons */
+        .button {
+            background-color: #ff6f61; /* Button background color */
+            border: none; /* Removes button border */
+            color: white; /* Button text color */
+            padding: 15px 30px; /* Button padding */
+            text-align: center; /* Centers text inside the button */
+            text-decoration: none; /* Removes underline from text links */
+            display: inline-block; /* Ensures the button is inline with other elements */
+            font-size: 16px; /* Font size for button text */
+            margin: 10px; /* Space around the button */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            border-radius: 5px; /* Rounds button corners */
+        }
+
+        /* Styles for button hover effect */
+        .button:hover {
+            background-color: #ff3f2e; /* Changes background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main heading for the page -->
+    <h1>White Page</h1>
+
+    <!-- Navigation buttons -->
+    <a href="index.html" class="button">Return to Home Page</a>
+    <a href="black.html" class="button">Go to Black Page</a>
+</body>
+</html>

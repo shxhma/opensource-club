@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating Row Colors Table</title>
+    <style>
+        /* Styling for the h1 header */
+        h1 {
+            color: slateblue;
+            text-align: center;
+        }
+
+        /* Basic styling for the table */
+        table {
+            width: 50%; /* Set the table width to 50% of the parent container */
+            border-collapse: collapse; /* Remove space between table cells */
+            margin: 20px auto; /* Center the table horizontally and add a top margin */
+        }
+
+        /* Change the background color of the table header */
+        thead {
+            color: #4B0082; /* Deep Purple */
+        }
+
+        /* Styling for table headers and cells */
+        th, td {
+            padding: 10px; /* Add padding inside table cells */
+            text-align: center; /* Center the text in table cells */
+            border: 1px solid black; /* Add a black border around table cells */
+            color: black; /* Black text color for better readability */
+        }
+
+        /* Apply color to odd rows (1st, 3rd, 5th, etc.) */
+        tr:nth-child(even) {
+            background-color: #ff8080; /* Light red-pink background color for even rows */
+        }
+
+        /* Apply color to even rows (2nd, 4th, 6th, etc.) */
+        tr:nth-child(odd) {
+            background-color: #99ffff; /* Baby blue background color for odd rows */
+        }
+
+        /* Styling for diagonal cells */
+        tr:nth-child(1) td:nth-child(1),
+        tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(3) td:nth-child(3),
+        tr:nth-child(4) td:nth-child(4) {
+            background-color: yellow; /* Apply a yellow background color to diagonal cells */
+            font-weight: bold; /* Make the text bold in diagonal cells */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>LIST OF STUDENTS IN THE OPEN SOURCE CLUB</h1>
+    <!-- Start of the table -->
+    <table>
+        <!-- Table header with four columns -->
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>RRN</th>
+                <th>DEPARTMENT</th>
+                <th>SECTION</th>
+            </tr>
+        </thead>
+        <!-- Table body with alternating row colors -->
+        <tbody>
+            <!-- Odd row (1st row) -->
+            <tr>
+                <td>Simra Razeen.I</td>
+                <td>220071601247</td>
+                <td>B.TECH CSE</td>
+                <td>A</td>
+            </tr>
+            <!-- Even row (2nd row) -->
+            <tr>
+                <td>Veshal.A</td>
+                <td>220071601269</td>
+                <td>B.TECH CSE</td>
+                <td>B</td>
+            </tr>
+            <!-- Odd row (3rd row) -->
+            <tr>
+                <td>Sree Lekha.A.S</td>
+                <td>220071601248</td>
+                <td>B.TECH CSE</td>
+                <td>A</td>
+            </tr>
+            <!-- Even row (4th row) -->
+            <tr>
+                <td>Zayan.S</td>
+                <td>220071601237</td>
+                <td>B.TECH IOT</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- End of the table -->
+    <!-- Here in the table  the diagnal has been given a differnt color -->
+
+</body>
+</html>
