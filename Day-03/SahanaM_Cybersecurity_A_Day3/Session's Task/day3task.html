@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I have created a html file for day 3 session's task-->
+    <title>Day 3 Session's Task</title>
+    <!--I have linked the external stylesheet-->
+    <link rel="stylesheet" href="style_task.css">
+    <!--I have added internal css for styling-->
+    <style>
+        /*I have added color and margin-top properties to h1 inside the intro class*/
+        .intro h1 {
+            color: #d283e0;
+            margin-top: 30px;
+        }
+
+        /*I have added color and font-weight properties to p inside the intro class*/
+        .intro p {
+            color: #B399D4;
+            font-weight: 600;
+        }
+
+        /*I have added color and font-size properties to h2 tag*/
+        h2 {
+            color: #5A639C;
+            font-size: 25px;
+        }
+
+        /*I have added margin, border-collapse, width properties to table tag*/
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        /*I have added border and padding properties to both th and td tags*/
+        th,
+        td {
+            border: 2px solid white;
+            padding: 10px;
+        }
+
+        /*I have added margin property to caption tag*/
+        caption {
+            margin: 10px;
+        }
+
+        /*I have added background-color property to headings class, type2 id and type4 id*/
+        .headings,
+        #type2,
+        #type4 {
+            background-color: #E2BBE9;
+        }
+
+        /*I have added background-color property to type1 class and type3 id */
+        .type1,
+        #type3 {
+            background-color: #9B86BD;
+        }
+
+        /*I have added background-color property to description id*/
+        #description {
+            background-color: #7776B3;
+        }
+    </style>
+</head>
+
+<body>
+    <!--I have used div tag with class attribute and stored one h1 tag and two p tags in it-->
+    <div class="intro">
+        <h1>Introduction to CSS</h1>
+        <p>CSS stands for Cascading Style Sheets</p>
+        <p>It's used to define the presentation of HTML elements</p>
+    </div>
+    <!--I have added table tag with attributes to store values in tabular format-->
+    <table cellspacing="10" cellpadding="15">
+        <caption>
+            <!--I have added a heading to the table-->
+            <h2>Selectors in CSS</h2>
+        </caption>
+        <!--I have added thead tag to store one row in it-->
+        <thead>
+            <!--I have added tr tag with class attribute and stored three th tags in it-->
+            <tr class="headings">
+                <th>Types</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+        </thead>
+        <!--I have added tbody tag to store four rows in it-->
+        <tbody>
+            <!--I have added tr tag with class attribute and stored three td tags in it-->
+            <tr class="type1">
+                <td>Universal</td>
+                <td>All the elements</td>
+                <td>* { color: yellow; }</td>
+            </tr>
+            <!--I have added tr tag with id attribute and stored three td tags in it-->
+            <tr id="type2">
+                <td>Element</td>
+                <td>A specific element</td>
+                <td>h1 { padding: 10px; }</td>
+            </tr>
+            <!--I have added tr tag with id attribute and stored three td tags in it-->
+            <tr id="type3">
+                <td>Class</td>
+                <td>A class of elements</td>
+                <td>.p { margin: 20px; }</td>
+            </tr>
+            <!--I have added tr tag with id attribute and stored three td tags in it-->
+            <tr id="type4">
+                <td>Id</td>
+                <td>A unique id</td>
+                <td>#first { font-size: 25px; }</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--I have added table tag with attributes to store values in tabular format-->
+    <table cellspacing="10" cellpadding="15">
+        <caption>
+            <!--I have added a heading to the table-->
+            <h2>Properties in CSS</h2>
+        </caption>
+        <!--I have added thead tag to store one row in it-->
+        <thead>
+            <!--I have added tr tag with id attributes and stored three th tags in it-->
+            <tr>
+                <th id="description">Font</th>
+                <!--I have added inline css for styling-->
+                <th style="color: black;">Color</th>
+                <th id="description">Margin</th>
+            </tr>
+        </thead>
+        <!--I have added tbody tag to store two rows in it-->
+        <tbody>
+            <!--I have added tr tag with id attribute and stored three td tags in it-->
+            <tr>
+                <!--I have added inline css for styling-->
+                <td style="color: black;">Sets the size of the font</td>
+                <td id="description">Sets the color of the font</td>
+                <!--I have added inline css for styling-->
+                <td style="color: black;">Sets space outside the border</td>
+            </tr>
+            <!--I have added tr tag with id attribute and stored three td tags in it-->
+            <tr>
+                <td id="description">font-size: 20px;</td>
+                <!--I have added inline css for styling-->
+                <td style="color: black;">color: green;</td>
+                <td id="description">margin: 10px;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<!--This line marks the end of html-->
