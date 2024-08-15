@@ -1,0 +1,26 @@
+/* External CSS file (styles.css) */
+
+/* Styles for the body element */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+}
+
+/* Styles for buttons */
+.button {
+    background-color: aquamarine; /* Button background color */
+    border: none; /* Removes the default button border */
+    color: black; /* Button text color */
+    padding: 15px 30px; /* Padding inside the button */
+    text-align: center; /* Centers text inside the button */
+    text-decoration: none; /* Removes underline from text links */
+    display: inline-block; /* Makes the button an inline-level block container */
+    font-size: 16px; /* Font size for button text */
+    margin: 10px; /* Space around the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 5px; /* Rounds the corners of the button */
+}
+
+/* Styles for button hover effect */
+.button:hover {
+    background-color: aquamarine; /* Keeps the same background color on hover */
+}

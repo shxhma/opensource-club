@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        /* Styles for the body of the page */
+        body {
+            background-image: url('bg.jpg'); /* Background image path */
+            background-size: cover; /* Ensures the background image covers the entire page */
+            text-align: center; /* Centers text horizontally */
+            color: black; /* Text color */
+        }
+
+        /* Styles for the container div */
+        .container {
+            display: flex; /* Uses Flexbox for layout */
+            flex-direction: column; /* Aligns children in a vertical column */
+            justify-content: center; /* Centers children vertically */
+            align-items: center; /* Centers children horizontally */
+            height: 100vh; /* Sets container height to full viewport height */
+        }
+
+        /* Styles for buttons */
+        .button {
+            background-color: aquamarine; /* Button background color */
+            border: none; /* Removes button border */
+            color: black; /* Button text color */
+            padding: 15px 30px; /* Button padding */
+            text-align: center; /* Centers text inside the button */
+            text-decoration: none; /* Removes underline from text links */
+            display: inline-block; /* Ensures the button is inline with other elements */
+            font-size: 16px; /* Font size for button text */
+            margin: 10px; /* Space around the button */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            border-radius: 5px; /* Rounds button corners */
+        }
+
+        /* Styles for button hover effect */
+        .button:hover {
+            background-color: aquamarine; /* Keeps the same background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading for the page -->
+        <h1>Welcome to the Home Page</h1>
+
+        <!-- Brief description or welcome message -->
+        <p>This is the home page with navigation options.</p>
+
+        <!-- Navigation buttons -->
+        <a href="black.html" class="button">Go to Black Page</a>
+        <a href="white.html" class="button">Go to White Page</a>
+    </div>
+</body>
+</html>
