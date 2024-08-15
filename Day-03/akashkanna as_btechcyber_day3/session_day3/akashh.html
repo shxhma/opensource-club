@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT TABLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+         /* green color for all odd rows (1st) */
+        .subjects-table tr:nth-child(1) {
+            background-color: red;
+        }
+
+        /* Blue color for all odd rows (3rd, 5th) */
+        .subjects-table tr:nth-child(3),
+        .subjects-table tr:nth-child(5) {
+            background-color: blue;
+        }
+
+        /* Gold color for specific rows (2nd, 4th, 6th) */
+        .subjects-table tr:nth-child(2),
+        .subjects-table tr:nth-child(4),
+        .subjects-table tr:nth-child(6) {
+            background-color: gold;
+        }
+
+        /* Diagonal Column Coloring for Marks Table */
+        .marks-table .diagonal1 {
+            background-color: #f9cb9c; /* Light orange for 1st diagonal */
+        }
+
+        .marks-table .diagonal2 {
+            background-color: #add8e6; /* Light blue for 2nd diagonal */
+        }
+
+        .marks-table .diagonal3 {
+            background-color: #90ee90; /* Light green for 3rd diagonal */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>SUBJECTS TABLE:</h2>
+    <table class="subjects-table">
+        <tr>
+            <th>Subject</th>
+            <th>Code</th>
+        </tr>
+        <tr>
+            <td>TOC</td>
+            <td>CSD3101</td>
+        </tr>
+        <tr>
+            <td>AI</td>
+            <td>CSD3102</td>
+        </tr>
+        <tr>
+            <td>DATA MINING</td>
+            <td>CSD3104</td>
+        </tr>
+        <tr>
+            <td>MOBILE APPLICATION</td>
+            <td>CSD3131</td>
+        </tr>
+        <tr>
+            <td>DATA SCIENCE</td>
+            <td>CSDX113</td>
+        </tr>
+    </table>
+
+    <h2>MARKS TABLE:</h2>
+    <table class="marks-table">
+        <tr>
+            <th>Student</th>
+            <th>TOC</th>
+            <th>DATA MINING</th>
+            <th>DATA SCIENCE</th>
+        </tr>
+        <tr>
+            <td>AKASH</td>
+            <td class="diagonal1">85</td>
+            <td class="diagonal2">78</td>
+            <td class="diagonal1">90</td>
+        </tr>
+        <tr>
+            <td>THARA</td>
+            <td class="diagonal2">88</td>
+            <td class="diagonal1">82</td>
+            <td class="diagonal2">87</td>
+        </tr>
+        <tr>
+            <td>MELVIN</td>
+            <td class="diagonal1">92</td>
+            <td class="diagonal2">89</td>
+            <td class="diagonal1">95</td>
+        </tr>
+    </table>
+
+</body>
+</html>
