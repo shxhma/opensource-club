@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family:'Great Vibes', cursive;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* Button Styles */
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Background Images */
+.home-bg {
+    background-image: url('home-bg.jpg'); /* BW background image */
+}
+
+.black-bg {
+    background-color: #000;
+}
+
+.white-bg {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Specific Button Colors */
+.black-bg .btn {
+    background-color: #333;
+}
+
+.white-bg .btn {
+    background-color: #ddd;
+    color: #000;
+}
+
+.home-bg .btn {
+    background-color: #444;
+}
