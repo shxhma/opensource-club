@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with css</title>
+</head>
+<body><!--style tag has been added under body as a result of internal css-->
+    <!--since the styling is less,Its better to go with internal as it works efficiently-->
+    <style>    
+    .colour_add{
+    background-color: rgb(204, 198, 35);
+}
+.colour_ev{
+    background-color: rgb(115, 115, 185);
+}
+#id_1{
+    background-color: rgb(213, 154, 76);
+}
+body{
+    align-items: center;
+    margin:auto;
+    padding:0 90px;
+}
+    </style>
+    <table cellspacing="5" cellpadding="2" border="1"><!--creating tables with attributes-->
+        <caption> SAME COLOURS TO ALTERNATE ROWS</caption><!--giving same colour background for the alternate rows-->
+        <thread>
+            <tr><!--heading has been given in thread tag-->
+                <th>NAME</th>
+                <th>CLASS</th>
+                <th>SECTION</th>
+                <th>INTRESTED ACTIVITY</th>
+            </tr>
+        </thread>
+        <tbody><!--has table rows and table datas-->
+            <tr class="colour_add"><!--adding selector to row-->
+                <td>Aayush</td>
+                <td>10th</td>
+                <td>C</td>
+                <td>Poem writing</td>
+            </tr>
+<tr class="colour_ev">
+    <td>Sri</td>
+    <td>12th</td>
+    <td>A</td>
+    <td>Singing</td>
+</tr>
+<tr class="colour_add">
+    <td>Ram</td>
+    <td>8th</td>
+    <td>C</td>
+    <td>article writing</td>
+</tr>
+<tr class="colour_ev">
+    <td>shaasha</td>
+    <td>9th</td>
+    <td>B</td>
+    <td>Hosting</td>
+</tr>
+<tr class="colour_add">
+    <td>Ansh</td>
+    <td>9th</td>
+    <td>A</td>
+    <td>essay writing</td>
+</tr>
+        </tbody>
+    </table>
+    <table cellpadding="2" cellspacing="4" border="1"><!--creating tables with attributes-->
+        <caption>SAME COLOR TO DIAGONAL CELLS</caption><!--giving same colour background for the diagonal cells-->
+        <threads>
+            <tr>
+                <th>EVENT</th>
+                <th>VENUE</th>
+                <th>TIME</th>
+                <th>ID NUMBER</th>
+            </tr>
+        </threads>
+        <tbody>
+            <tr>
+                <!--creating a selector(id) for styling them using css-->
+                <td id="id_1">poem writing</td><!--adding selector to the cell-->
+                <td>Auditorium</td>
+                <td>10am</td>
+                <td>23401</td>
+            </tr>
+            <tr>
+                <td>Singing</td>
+                <td id="id_1">Gallery studio</td><!--adding selector to the diagonal cell(2)-->
+                <td>12pm</td>
+                <td>23402</td>
+            </tr>
+            <tr>
+                <td>Hosting</td>
+                <td>Auditorium</td>
+                <td id="id_1">10am</td><!--adding selector to the diagonal cell(3)-->
+                <td>23403</td>
+            </tr>
+            <tr>
+                <td>Article writing</td>
+                <td>classroom-23</td>
+                <td>9am</td>
+                <td id="id_1">23404</td><!--adding selector to the final one-->
+            </tr>
+            <tr>
+                <td>Essay writing</td>
+                <td>3rd floor_CS-34</td>
+                <td>10am</td>
+                <td>23405</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
