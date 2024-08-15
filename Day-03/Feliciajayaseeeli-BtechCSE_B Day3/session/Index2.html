@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Colored Tables</title>
+
+    <!-- using internal css -->
+    <style>
+        .table1 {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        .table2 {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Style for table headers */
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+      
+        .purple {
+            background-color: #9370DB; 
+        }
+
+    
+        .pink {
+            background-color: #FFC0CB; 
+        }
+
+    
+        .light-green {
+            background-color: #90EE90;
+        }
+
+  
+        .light-yellow {
+            background-color: #FFFFE0; 
+        }
+
+        .red{
+            background-color: #FF8C9E;
+        }
+        
+        .sandal{
+            background-color: #FAEDCE;
+        }
+        
+        /* Color for odd rows */
+        .odd-row {
+            background-color: #f2f2f2; 
+        }
+
+        /* Color for even rows */
+        .even-row {
+            background-color: #d9eaf7; 
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- add colours to diagonal cells -->
+    <table class="table1">
+
+
+        <!-- table rows using tr tag -->
+        <tr>
+
+            <!-- table headers using th tag -->
+            <th>Fruits</th>
+            <th>Vegetables</th>
+            <th>Trees</th>
+            <th>plants</th>
+          
+        </tr>
+        <tr>
+
+            <!-- table column using td tag -->
+            <td class="purple"> Apple</td>
+            <td  class="red">Carrot</td>
+            <td  class="sandal">Redwood</td>
+            <td  style="background-color: aquamarine;">Aloe vera</td>
+        
+        </tr>
+        <tr>
+            <td class="pink">Banana</td>
+            <td class="purple">broccoli</td>
+            <td class="red">Cherry</td>
+            <td class="sandal">Lavender</td>
+        </tr>
+        <tr>
+            <td  class="light-green">Grapes</td>
+            <td class="pink">Spinach</td>
+            <td class="purple">Mango </td>
+            <td class="red">Basil</td>
+        </tr>
+        <tr>
+            <td  class="light-yellow">Dragon</td>
+            <td  class="light-green">Cucumber</td>
+            <td class="pink">Pine</td>
+            <td class="purple">Orchid</td>
+        </tr>
+        <tr>
+            <td  class="pink">Guava</td>
+            <td  class="light-yellow">Tomato</td>
+            <td  class="light-green">Oak</td>
+            <td  class="pink">Rosemary</td>
+        </tr>
+    </table>
+
+
+    <!-- Adding colors in alternate rows -->
+
+    <table class="table2">
+        <tr>
+            <th>RRN</th>
+            <th>Name</th>
+            <th>Dept</th>
+        </tr>
+        <tr class="odd-row">
+            <td> 1</td>
+            <td> Abinaya</td>
+            <td> CSE</td>
+        </tr>
+        <tr class="even-row">
+            <td>2</td>
+            <td>Carol</td>
+            <td>CSE</td>
+        </tr>
+        <tr class="odd-row">
+            <td>3</td>
+            <td>Elsa</td>
+            <td>CSE</td>
+        </tr>
+        <tr class="even-row">
+            <td>4</td>
+            <td>Vaishu</td>
+            <td>CSE</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
