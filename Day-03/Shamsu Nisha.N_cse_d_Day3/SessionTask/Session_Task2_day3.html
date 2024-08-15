@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Colored Diagonal Cells</title>
+
+    <!-- Internal CSS for styling the table -->
+    <style>
+        /* General font settings for the body */
+        body {
+            font-family: Arial, sans-serif; /* Font family for the entire document */
+            font-size: 16px; /* Base font size for the document */
+            color: #333; /* Default text color (dark gray) */
+        }
+
+        /* Center the heading */
+        h2 {
+            text-align: center; /* Centers the heading text */
+            margin-top: 20px; /* Adds some space above the heading */
+            font-size: 24px; /* Font size for the heading */
+            color: #0056b3; /* Heading color (blue) */
+        }
+
+        /* Basic table styling */
+        table {
+            width: 90%; /* Adjusted the width to accommodate content */
+            border-collapse: collapse; /* Removes the space between table borders */
+            margin: 20px auto; /* Centers the table on the page */
+            font-size: 14px; /* Font size for the table content */
+        }
+
+        /* Styling for table headers and cells */
+        th, td {
+            padding: 8px; /* Adds padding inside the cells */
+            text-align: center; /* Centers text in the cells */
+            border: 1px solid #ddd; /* Adds a light border around cells */
+        }
+
+        /* Styling for the table header */
+        th {
+            background-color: #007bff; /* Background color for header (blue) */
+            color: #fff; /* Text color for header (white) */
+        }
+
+        /* Styling for diagonal cells */
+        td.diagonal {
+            background-color: #ffcccb; /* Light Red background for diagonal cells */
+            color: #000; /* Black text color for diagonal cells */
+            font-weight: bold; /* Bold font for diagonal cells */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered heading for the table -->
+    <h2>Annual Company Sales Data</h2>
+
+    <!-- Centered table structure with 10 rows and 10 columns -->
+    <table>
+        <!-- Table header row -->
+        <tr>
+            <th>Year</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>Q8</th>
+            <th>Q9</th>
+        </tr>
+
+        <!-- Table data rows with a single diagonal colored -->
+        <tr>
+            <td class="diagonal">2014</td> <!-- Diagonal Cell -->
+            <td>$10,000</td>
+            <td>$12,000</td>
+            <td>$14,000</td>
+            <td>$16,000</td>
+            <td>$18,000</td>
+            <td>$20,000</td>
+            <td>$22,000</td>
+            <td>$24,000</td>
+            <td>$26,000</td>
+        </tr>
+        <tr>
+            <td>2015</td>
+            <td class="diagonal">$11,000</td> <!-- Diagonal Cell -->
+            <td>$13,000</td>
+            <td>$15,000</td>
+            <td>$17,000</td>
+            <td>$19,000</td>
+            <td>$21,000</td>
+            <td>$23,000</td>
+            <td>$25,000</td>
+            <td>$27,000</td>
+        </tr>
+        <tr>
+            <td>2016</td>
+            <td>$12,500</td>
+            <td class="diagonal">$14,000</td> <!-- Diagonal Cell -->
+            <td>$16,000</td>
+            <td>$18,000</td>
+            <td>$20,000</td>
+            <td>$22,000</td>
+            <td>$24,000</td>
+            <td>$26,000</td>
+            <td>$28,000</td>
+        </tr>
+        <tr>
+            <td>2017</td>
+            <td>$13,500</td>
+            <td>$15,500</td>
+            <td class="diagonal">$17,000</td> <!-- Diagonal Cell -->
+            <td>$19,000</td>
+            <td>$21,000</td>
+            <td>$23,000</td>
+            <td>$25,000</td>
+            <td>$27,000</td>
+            <td>$29,000</td>
+        </tr>
+        <tr>
+            <td>2018</td>
+            <td>$14,500</td>
+            <td>$16,500</td>
+            <td>$18,500</td>
+            <td class="diagonal">$20,000</td> <!-- Diagonal Cell -->
+            <td>$22,000</td>
+            <td>$24,000</td>
+            <td>$26,000</td>
+            <td>$28,000</td>
+            <td>$30,000</td>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td>$15,000</td>
+            <td>$17,500</td>
+            <td>$20,000</td>
+            <td>$22,500</td>
+            <td class="diagonal">$25,000</td> <!-- Diagonal Cell -->
+            <td>$27,500</td>
+            <td>$30,000</td>
+            <td>$32,500</td>
+            <td>$35,000</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>$16,000</td>
+            <td>$18,500</td>
+            <td>$21,000</td>
+            <td>$23,500</td>
+            <td>$26,000</td>
+            <td class="diagonal">$28,500</td> <!-- Diagonal Cell -->
+            <td>$31,000</td>
+            <td>$33,500</td>
+            <td>$36,000</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>$17,000</td>
+            <td>$19,500</td>
+            <td>$22,000</td>
+            <td>$24,500</td>
+            <td>$27,000</td>
+            <td>$29,500</td>
+            <td class="diagonal">$32,000</td> <!-- Diagonal Cell -->
+            <td>$34,500</td>
+            <td>$37,000</td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>$18,500</td>
+            <td>$21,000</td>
+            <td>$23,500</td>
+            <td>$26,000</td>
+            <td>$28,500</td>
+            <td>$31,000</td>
+            <td>$33,500</td>
+            <td class="diagonal">$36,000</td> <!-- Diagonal Cell -->
+            <td>$38,500</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>$20,000</td>
+            <td>$22,500</td>
+            <td>$25,000</td>
+            <td>$27,500</td>
+            <td>$30,000</td>
+            <td>$32,500</td>
+            <td>$35,000</td>
+            <td>$37,500</td>
+            <td class="diagonal">$40,000</td> <!-- Diagonal Cell -->
+        </tr>
+    </table>
+
+</body>
+</html>
