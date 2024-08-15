@@ -1,0 +1,75 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: left;
+    font-size: 25px;
+}
+
+th {
+    background-color: #4CAF50; /* Header color */
+    color: white;
+}
+
+/* Primary diagonal from top-left to bottom-right */
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(4) td:nth-child(4),
+tr:nth-child(5) td:nth-child(5),
+tr:nth-child(6) td:nth-child(6) {
+    background-color: #add8e6; /* Light Blue */
+}
+
+/* Primary diagonal from top-right to bottom-left */
+tr:nth-child(1) td:nth-child(6),
+tr:nth-child(2) td:nth-child(5),
+tr:nth-child(3) td:nth-child(4),
+tr:nth-child(4) td:nth-child(1),
+tr:nth-child(4) td:nth-child(3),
+tr:nth-child(5) td:nth-child(2),
+tr:nth-child(6) td:nth-child(1),
+tr:nth-child(6) td:nth-child(3) {
+    background-color: #98fb98; /* Pale Green */
+}
+
+/* Diagonal parallel to top-left to bottom-right (above) */
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(3) td:nth-child(4),
+tr:nth-child(4) td:nth-child(5),
+tr:nth-child(5) td:nth-child(6) {
+    background-color: #ffffe0; /* Light Yellow */
+}
+
+/* Diagonal parallel to top-left to bottom-right (below) */
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(4) td:nth-child(3),
+tr:nth-child(5) td:nth-child(4),
+tr:nth-child(6) td:nth-child(5) {
+    background-color: #ffcccb; /* Light Red */
+}
+
+/* Diagonal parallel to top-right to bottom-left (above) */
+tr:nth-child(1) td:nth-child(5),
+tr:nth-child(2) td:nth-child(4),
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(4) td:nth-child(2),
+tr:nth-child(5) td:nth-child(1) {
+    background-color: #f0e68c; /* Khaki */
+}
+
+/* Diagonal parallel to top-right to bottom-left (below) */
+tr:nth-child(2) td:nth-child(6),
+tr:nth-child(3) td:nth-child(5),
+tr:nth-child(4) td:nth-child(4),
+tr:nth-child(5) td:nth-child(3),
+tr:nth-child(6) td:nth-child(2) {
+    background-color: #dda0dd; /* Plum */
+}
