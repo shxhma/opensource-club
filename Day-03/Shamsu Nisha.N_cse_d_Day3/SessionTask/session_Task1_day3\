@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating Row Colors Table</title>
+
+    <!-- Internal CSS for styling the table -->
+    <style>
+        /* General font settings for the body */
+        body {
+            font-family: Arial, sans-serif; /* Font family for the entire document */
+            font-size: 16px; /* Base font size for the document */
+            color: #333; /* Default text color (dark gray) */
+        }
+
+        /* Center the heading */
+        h2 {
+            text-align: center; /* Centers the heading text */
+            margin-top: 20px; /* Adds some space above the heading */
+            font-size: 24px; /* Font size for the heading */
+            color: #0056b3; /* Heading color (blue) */
+        }
+
+        /* Basic table styling */
+        table {
+            width: 60%; /* Adjusted the width to accommodate an additional column */
+            border-collapse: collapse; /* Removes the space between table borders */
+            margin: 20px auto; /* Centers the table on the page */
+            font-size: 16px; /* Font size for the table content */
+            color: #333; /* Default font color for the table content (dark gray) */
+        }
+
+        /* Styling for table headers and cells */
+        th, td {
+            padding: 10px; /* Adds padding inside the cells */
+            text-align: left; /* Aligns text to the left */
+            border: 1px solid #ddd; /* Adds a light border around cells */
+        }
+
+        /* Styling for the table header */
+        th {
+            background-color: #007bff; /* Background color for header (blue) */
+            color: #fff; /* Text color for header (white) */
+            font-weight: bold; /* Bold font for header */
+        }
+
+        /* Styling for odd rows (1st, 3rd, 5th, etc.) */
+        tr:nth-child(odd) {
+            background-color: #f0f8ff; /* Light Blue color for odd rows */
+            color: #333; /* Dark gray font color for odd rows */
+        }
+
+        /* Styling for even rows (2nd, 4th, 6th, etc.) */
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light Gray color for even rows */
+            color: #555; /* Slightly lighter gray font color for even rows */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered heading for the table -->
+    <h2>Employee Directory</h2>
+
+    <!-- Centered table structure with 15 rows of data and 4 columns -->
+    <table>
+        <!-- Table header row -->
+        <tr>
+            <th>Employee ID</th> <!-- Column 1 header -->
+            <th>Name</th> <!-- Column 2 header -->
+            <th>Department</th> <!-- Column 3 header -->
+            <th>Position</th> <!-- Column 4 header -->
+        </tr>
+        
+        <!-- Table data rows -->
+        <tr>
+            <td>001</td> <!-- Data for Row 1, Column 1 -->
+            <td>John Doe</td> <!-- Data for Row 1, Column 2 -->
+            <td>Human Resources</td> <!-- Data for Row 1, Column 3 -->
+            <td>Manager</td> <!-- Data for Row 1, Column 4 -->
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Jane Smith</td>
+            <td>Marketing</td>
+            <td>Senior Analyst</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Michael Johnson</td>
+            <td>IT</td>
+            <td>System Administrator</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Emily Davis</td>
+            <td>Finance</td>
+            <td>Financial Analyst</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td>David Wilson</td>
+            <td>Operations</td>
+            <td>Operations Manager</td>
+        </tr>
+        <tr>
+            <td>006</td>
+            <td>Linda Taylor</td>
+            <td>Sales</td>
+            <td>Sales Representative</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>James Anderson</td>
+            <td>Engineering</td>
+            <td>Project Engineer</td>
+        </tr>
+        <tr>
+            <td>008</td>
+            <td>Patricia Thomas</td>
+            <td>Customer Service</td>
+            <td>Customer Support Specialist</td>
+        </tr>
+        <tr>
+            <td>009</td>
+            <td>Robert Martinez</td>
+            <td>Legal</td>
+            <td>Legal Advisor</td>
+        </tr>
+        <tr>
+            <td>010</td>
+            <td>Mary Hernandez</td>
+            <td>Research & Development</td>
+            <td>R&D Scientist</td>
+        </tr>
+        <tr>
+            <td>011</td>
+            <td>Christopher Lee</td>
+            <td>Supply Chain</td>
+            <td>Logistics Coordinator</td>
+        </tr>
+        <tr>
+            <td>012</td>
+            <td>Karen Walker</td>
+            <td>Product Management</td>
+            <td>Product Manager</td>
+        </tr>
+        <tr>
+            <td>013</td>
+            <td>Matthew Hall</td>
+            <td>Business Development</td>
+            <td>Business Development Executive</td>
+        </tr>
+        <tr>
+            <td>014</td>
+            <td>Elizabeth Young</td>
+            <td>Quality Assurance</td>
+            <td>QA Specialist</td>
+        </tr>
+        <tr>
+            <td>015</td>
+            <td>Steven White</td>
+            <td>Logistics</td>
+            <td>Logistics Manager</td>
+        </tr>
+    </table>
+
+</body>
+</html>
