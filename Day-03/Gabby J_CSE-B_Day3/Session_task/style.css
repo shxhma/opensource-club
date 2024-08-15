@@ -1,0 +1,36 @@
+body {
+    font-family: "Georgia";
+}
+
+table {
+    width: 50%;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+thead {
+    font-family: "Verdana";
+    background-color: #00644b;
+    color: white;
+}
+
+.odd {
+    background-color: #e03636;
+}
+
+.even {
+    background-color: #027f98;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(4) td:nth-child(4),
+tr:nth-child(5) td:nth-child(5) {
+    background-color: #ffcccb;
+}
