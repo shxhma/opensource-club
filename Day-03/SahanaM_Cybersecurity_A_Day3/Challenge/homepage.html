@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--I have created a html file for pag 1 of day 3 challenge-->
+  <title>Home Page</title>
+  <!--I have linked the external stylesheet-->
+  <link rel="stylesheet" href="style_challenge.css">
+</head>
+
+<body>
+  <!--I have added a header tag to store table vaules-->
+  <header>
+    <table>
+      <tr>
+        <!--I have added an image and navigation links within td tag such that they are side by side-->
+        <td><img src="club.png" alt="Logo" width="270px" height="170px"></td>
+        <td>
+          <!--I have used nav tag with navigation class to store anchor tags for navigation-->
+          <nav class="navigation">
+            <!--I have added navigation to black page-->
+            <a href="blackpage.html">HTML</a>
+            <!--I have added navigation to white page-->
+            <a href="whitepage.html">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">C++</a>
+            <a href="#">PYTHON</a>
+            <a href="#">JAVA</a>
+            <a href="#">MYSQL</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <!--I have added section tag with intro id-->
+  <section id="intro">
+    <!--I have added inline css-->
+    <h1 style="color:black">Introduction to Learning Paths</h1>
+    <h2 style="color:#000080">Welcome to the Open Source Learning Paths!</h2>
+    <p id="paragraph1" style="color:#4d4d4d">Our club is dedicated to empowering students with the skills needed to
+      thrive in this
+      technological world.
+      Whether you’re just starting out or looking to refine your expertise, our learning paths will help you along the
+      way.</p>
+    <h2 style="color: #4B0082;">Choose Your Path</h2>
+    <p id="paragraph1" style="color:#4d4d4d">Select the learning path that best suits your needs</p>
+    <h2 style="color: #483D8B;">Learning Paths:</h2>
+    <!--I have used unordered list with square bullet points-->
+    <ul type="square">
+      <li><u>HTML Path</u>: Dive into the foundational language of the web.</li><br>
+      <li><u>CSS Path</u>: Learn how to bring your web pages to life with stunning designs.</li>
+    </ul>
+  </section>
+  <!--I have used article tag with class attribute-->
+  <article class="blog">
+    <h2 style="color: #4B0082;">Select Your Skill Level</h2>
+    <h4>How would you describe your current skill level?</h4>
+    <!--I have used ordered list with A,B,C... bullet points-->
+    <ol type="A">
+      <li>Beginner: Just starting out, learning the basics.</li><br>
+      <li>Intermediate: Familiar with basics, looking to expand knowledge.</li><br>
+      <li>Advanced: Ready to tackle complex projects.</li>
+    </ol>
+
+  </article>
+  <!--I have used div tag to store buttons within tables-->
+  <div>
+    <h2 style="margin-left: 62px;">Get Started</h2>
+    <table>
+      <tr>
+        <td>
+          <!--I have added button for navigation with attributes-->
+          <button type="button" onclick="location.href='blackpage.html'"
+            style="background-color: black; color: white;">Learn HTML</button>
+        </td>
+        <td> <button type="button" onclick="location.href='whitepage.html'"
+            style="background-color: white; color: black;">Learn
+            CSS</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
+<!--This line marks the end of html-->

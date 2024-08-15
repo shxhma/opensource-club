@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I have created a html file for page 2 of day 3 challenge-->
+    <title>Black page</title>
+    <!--I have added internal css for styling-->
+    <style>
+        /*I have added padding,margin-left,border,border-radius,cursor,font-size and text-aligin properties to element selector*/
+        button {
+            padding: 20px 40px;
+            margin-left: 280px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /*I have added class selector*/
+        .main{
+            font-size: 22px;
+        }
+        /*I have added id selector*/
+        #head{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<!--I have added inline css for styling-->
+<body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin:30px 50px;
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color:white;
+    border-width: 2px;">
+    <!--I have used header tags to highlight the headings and I have used css to incorporate colors-->
+    <h1 style="color:white">HTML Learning Path</h1>
+    <!--I have added inline css for styling-->
+    <h2 class="main" style="color: rgb(242, 195, 107)">Agenda</h4>
+        <!--I have used unordered list with square bullet points and I have used style position to make the bullet points appear in the center-->
+        <ul type="square" style="list-style-position: outside; 
+    text-align: left;             
+    margin: 0 auto;               
+    display: table;
+    color: white;">
+    <!--I have added id selector-->
+            <li id="head">What is HTML?</li>
+            <li id="head">HTML Tags</li>
+            <li id="head">HTML Attributes</li>
+            <li id="head">Basic Structure of HTML</li>
+        </ul>
+        <!--I have added inline css for styling-->
+        <h3 class="main" style="color: rgb(242, 195, 107)">What is HTML?</h4>
+            <!--I have used unordered list with square bullet points and I have used style position to make the bullet points appear in the center-->
+            <ul type="disc" style="list-style-position: outside; 
+    text-align: left;             
+    margin: 0 auto;               
+    display: table;
+    color: white;">
+    <!--I have added id selector-->
+                <li id="head">HTML stands for Hyper Text Markup Language</li>
+                <li id="head">It's the standard language used to create and design webpages</li>
+                <li id="head">Backbone of web development</li>
+            </ul>
+            <!--I have added class selector-->
+            <h3 class="main" style="color: rgb(242, 195, 107)">Basic HTML Tags</h4>
+                <!--I have used ordered list with A,B,C.. and I have used style position to make the bullet points appear in the center-->
+                <ol type="A" style="list-style-position: outside; 
+    text-align: left;             
+    margin: 0 auto;               
+    display: table;
+    color: white;">
+    <!--I have added id selector-->
+                    <li id="head">Headings (h1-h6 tags) - HTML headings are titles or subtitles on a webpage</li>
+                    <li id="head">Paragraphs (p tag) - Defines a paragraph of text</li>
+                    <li id="head">Image (img tag) - Embeds an image in the web page</li>
+                </ol>
+                <!--I have used description list-->
+                <dl>
+                    <!--I have added class selector-->
+                    <h3 class="main" style="color: rgb(242, 195, 107)">Tags and Attributes in HTML</h4>
+                        <dt class="main" style="color:rgb(242, 195, 107); font-size:18px;">HTML Tags
+                        <dd id="head"style="color: white;"><br>HTML tags are used to define elements on a webpage</dd>
+                        </dt>
+                        <br>
+                        <dt class="main" style="color:rgb(242, 195, 107); font-size:18px;">HTML Attributes
+                        <dd id="head"style="color: white;"><br>Attributes provide additional information about HTML elements</dd>
+                        </dt>
+                </dl>
+                <table>
+                    <tr>
+                        <td>
+                            <!--I have added button for navigation with attributes-->
+                                <button type="button" onclick="location.href='homepage.html'" style="background-color: white; color:black ">Home Page</button>
+                            </form>
+                        </td>
+                        <td>
+                            <button type="button" onclick="location.href='whitepage.html'"
+                                    style="background-color: white; color: black;">Learn
+                                    CSS</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+</body>
+</html>
+<!--This line marks the end of html-->

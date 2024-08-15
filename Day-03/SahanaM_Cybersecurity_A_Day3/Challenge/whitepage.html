@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--I have created a html file for page 3 of day 3 challenge-->
+    <title>White Page</title>
+    <!--I have added internal css for styling-->
+    <style>
+        /*I have added font-size to li and tr element selectors*/
+        li,tr{
+            font-size: 20px;
+        }
+        /*I have added background-color property to headings class, type2 id and type4 id*/
+        .headings,
+        #type2,
+        #type4 {
+            background-color: #E2BBE9;
+        }
+
+        /*I have added background-color property to type1 class and type3 id */
+        .type1,
+        #type3 {
+            background-color: #9B86BD;
+        }
+
+        /*I have added background-color property to description id*/
+        #description {
+            background-color: #7776B3;
+        }
+
+        /*I have added padding,margin-left,border,border-radius,cursor,font-size and text-aligin properties to button tag*/
+        button {
+            padding: 20px 40px;
+            margin-left: 280px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<!--I have added inline css for styling-->
+
+<body style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 30px 50px;
+    padding: 30px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: blueviolet;
+    border-width: 2px;">
+    <!--I have used header tags to highlight the headings and I have used css to incorporate colors-->
+    <h1 style="color: blueviolet">CSS Learning Path</h1>
+    <h2 style="color: rgb(244, 166, 227);">Agenda</h2>
+        <!--I have used unordered list with square bullet points and I have used style position to make the bullet points appear in the center-->
+        <ul type="square" style="list-style-position: outside; 
+    text-align: left;             
+    margin: 0 auto;               
+    display: table;">
+            <li>What is CSS?</li>
+            <li>Properties in CSS</li>
+            <li>Selectors in CSS</li>
+
+        </ul>
+        <h2 style="color: rgb(242, 195, 107)">What is CSS?</h2>
+            <!--I have used unordered list with square bullet points and I have used style position to make the bullet points appear in the center-->
+            <ul type="disc" style="list-style-position: outside; 
+    text-align: left;             
+    margin: 0 auto;               
+    display: table;">
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>It's used to define the presentation of HTML elements</li>
+            </ul>
+            <!--I have added table tag with attributes to store values in tabular format-->
+            <table cellspacing="10" cellpadding="15" style="list-style-position: outside; 
+                text-align: left;             
+                margin: 0 auto;               
+                display: table;">
+                <caption>
+                    <!--I have added a heading to the table-->
+                    <h2 style="color: rgb(244, 166, 227);">Properties in CSS</h2>
+                </caption>
+                <!--I have added thead tag to store one row in it-->
+                <thead style="color: white;
+    text-align: center;">
+                    <!--I have added tr tag with id attributes and stored three th tags in it-->
+                    <tr>
+                        <th id="description">Font</th>
+                        <!--I have added inline css for styling-->
+                        <th style="color: black;">Color</th>
+                        <th id="description">Margin</th>
+                    </tr>
+                </thead>
+                <!--I have added tbody tag to store two rows in it-->
+                <tbody style="color: white;
+    text-align: center;">
+                    <!--I have added tr tag with id attribute and stored three td tags in it-->
+                    <tr>
+                        <!--I have added inline css for styling-->
+                        <td style="color: black;">Sets the size of the font</td>
+                        <td id="description">Sets the color of the font</td>
+                        <!--I have added inline css for styling-->
+                        <td style="color: black;">Sets space outside the border</td>
+                    </tr>
+                    <!--I have added tr tag with id attribute and stored three td tags in it-->
+                    <tr>
+                        <td id="description">font-size: 20px;</td>
+                        <!--I have added inline css for styling-->
+                        <td style="color: black;">color: green;</td>
+                        <td id="description">margin: 10px;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--I have added table tag with attributes to store values in tabular format-->
+            <table cellspacing="10" cellpadding="15" style="list-style-position: outside; 
+                text-align: left;             
+                margin: 0 auto;               
+                display: table;">
+                <caption>
+                    <!--I have added a heading to the table-->
+                    <h2 style="color: rgb(244, 166, 227);">Selectors in CSS</h2>
+                </caption>
+                <!--I have added thead tag to store one row in it-->
+                <thead style="color: white;
+        text-align: center;">
+                    <!--I have added tr tag with class attribute and stored three th tags in it-->
+                    <tr class="headings">
+                        <th>Types</th>
+                        <th>Description</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <!--I have added tbody tag to store four rows in it-->
+                <tbody style="color: white;
+    text-align: center;">
+                    <!--I have added tr tag with class attribute and stored three td tags in it-->
+                    <tr class="type1">
+                        <td>Universal</td>
+                        <td>All the elements</td>
+                        <td>* { color: yellow; }</td>
+                    </tr>
+                    <!--I have added tr tag with id attribute and stored three td tags in it-->
+                    <tr id="type2">
+                        <td>Element</td>
+                        <td>A specific element</td>
+                        <td>h1 { padding: 10px; }</td>
+                    </tr>
+                    <!--I have added tr tag with id attribute and stored three td tags in it-->
+                    <tr id="type3">
+                        <td>Class</td>
+                        <td>A class of elements</td>
+                        <td>.p { margin: 20px; }</td>
+                    </tr>
+                    <!--I have added tr tag with id attribute and stored three td tags in it-->
+                    <tr id="type4">
+                        <td>Id</td>
+                        <td>A unique id</td>
+                        <td>#first { font-size: 25px; }</td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside>
+                <table>
+                    <tr>
+                        <td>
+                            <!--I have added button for navigation with attributes-->
+                            <button type="button" onclick="location.href='homepage.html'"
+                                style="background-color: black; color: white;">Home Page</button>
+                            </form>
+                        </td>
+                        <td><button type="button" onclick="location.href='blackpage.html'"
+                                style="background-color: black; color: white">Learn
+                                HTML</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+</body>
+
+</html>
+<!--This line marks the end of html-->

@@ -1,0 +1,49 @@
+ /* Basic styles for home page using external css */
+
+ /* for aligning the content */
+ .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5%;
+   
+}
+
+body{
+    height: 70vh;
+    font-family: Arial, sans-serif;
+    background-color: #FAEDCE;
+
+}
+
+
+/* buttons with spacing */
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for the white button using id selector*/
+#white-button {
+    background-color: whitesmoke;
+    color: black;
+    margin-right: 3%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Style for the black button using class selector */
+.black-button  {
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     margin-left: 3%;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     border-radius: 10px;
+    }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+<body>
+    <div class="lokesh">
+        <h1>Home Page</h1>
+        <!-- button input types are used -->
+        <button class="black-button" onclick="window.location.href='black.html'">Go to Black Page</button>
+        <button class="white-button" onclick="window.location.href='white.html'">Go to White Page</button>
+    </div>
+</body>
+</html>
+<!-- style tags (css) is used to style the website -->
+<style>
+    body {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* display-flex ; The text input field will grow and shrink depending on the space available. */
+        display: flex;
+        /* aligns the flex items to the centre */
+        justify-content: center;
+        align-items: center;
+        /* required height of the body is inputted */
+        height: 100vh;
+        /* background colour and background image are set */
+        background-color:white;
+        background: url("imgtdy.jpg");
+        background-size: cover;
+    }
+    .lokesh {
+        text-align: center;
+    }
+    button {
+        /* inside buttons padding is used for nternal spacing of texts */
+        padding: 10px 20px;
+          /* inside buttons margins are used for external spacing of texts */
+        margin: 10px;
+        font-size: 16px;
+    }
+    .black-button {
+        background-color: black;
+        color: white;
+    }
+    .white-button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+</style>

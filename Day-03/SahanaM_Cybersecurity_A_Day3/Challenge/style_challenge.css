@@ -1,0 +1,51 @@
+/* I have added universal selector */
+* {
+    background-color: #e6e6ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*I have added element selector*/
+img {
+    margin-top: 0%;
+}
+/*I have added class selector*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+}
+/*I have added element selector*/
+a {
+    font-size: 22px;
+    padding: 30px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+/*I have used a combination of id,class and element selector*/
+#intro, 
+.blog,
+aside {
+    margin: 0 100px 0 60px;
+}
+
+/*I have used a combination of id and element selectors*/
+#paragraph1,
+ul,
+ol {
+    font-size: 22px;
+}
+/*I have used a combination of id and class selector*/
+#intro h3,
+.blog h4 {
+    font-size: 20px;
+}
+/*I have added an element selector with a varity of properties*/
+button {
+    padding: 20px 40px;
+    margin-left: 280px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*This line marks the end of css*/

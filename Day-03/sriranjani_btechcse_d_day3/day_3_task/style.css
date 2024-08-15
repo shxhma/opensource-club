@@ -1,0 +1,37 @@
+body{
+    background-image: url(8rT0gGu.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 700px;
+    padding-top: 200px;
+}
+.black_c1{
+    display:inline-block;
+    padding:15px;
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+.white_c1{
+    display:inline-block;
+    padding:15px;
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+.home_c1{
+    display:inline-block;
+    padding:15px;
+    border-radius: 7px;
+    font-size: 20px;
+
+}
+a .home_c1:hover{
+    background-color:rgb(88, 83, 83);
+}
+a .black_c1:hover{
+    background-color: rgb(88, 83, 83);
+}
+a .white_c1:hover{
+    background-color:rgb(88, 83, 83);
+}
